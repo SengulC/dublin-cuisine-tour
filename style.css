@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #0d0d0d;
+  --gold: #f0c040;
+  --white: #f5f0e8;
+  --muted: #888;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  /*
+    430px caps the layout at a comfortable mobile reading width.
+    The site is designed mobile-first as most users will arrive
+    from Instagram or Google Maps on their phone, mid-street.
+  */
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 20px 24px;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-navigation {
+  display: flex;
+  gap: 10px;
+}
+
+.page-navigation a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid #444;
+}
+
+.page-navigation a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+#landing {
+  padding: 80px 24px 60px;
+  /*
+    min-height pushes the entry actions toward the lower third of the
+    screen, which is where thumbs naturally rest on a phone. Users
+    shouldn't have to stretch to tap Discover.
+  */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landing h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  line-height: 0.95;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.tour-tagline {
+  margin-top: 16px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tour-entry-actions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 220px;
+}
+
+.action-discover,
+.action-about {
+  display: block;
+  text-align: center;
+  padding: 13px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #555;
+  color: var(--white);
+}
+
+/* Gold fill signals the primary action without needing a label like "recommended" */
+.action-discover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--black);
+}
+
+section {
+  padding: 60px 24px;
+}
+
+/* Slight background shift separates the routes section from landing
+   without a hard border which keeps the page feeling like one continuous scroll */
+#discover {
+  background: #0a0a0a;
+}
+
+.neighbourhood-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.tour-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+.walking-routes {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.walking-route {
+  border: 1px solid #222;
+  padding: 20px;
+}
+
+.walking-route:hover {
+  border-color: var(--gold);
+  background: #111;
+}
+
+.route-index {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.walking-route h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.route-details {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.tour-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 32px;
+}
+
+.tour-fact {
+  border: 1px solid #222;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact-figure {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.fact-name {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 28px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+/* Route detail page — stop-by-stop breakdown.
+   Mirrors the walking-route card pattern from discover.html
+   so the visual language stays consistent across pages. */
+
+.walking-stops {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.walking-stop {
+  border: 1px solid #222;
+  padding: 20px;
+}
+
+.walking-stop:hover {
+  border-color: var(--gold);
+  background: #111;
+}
+
+.stop-index {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.walking-stop h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stop-details {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* discover.html: route cards are now <a> tags so they need
+   to shed default anchor styling while keeping the card look */
+a.walking-route {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
