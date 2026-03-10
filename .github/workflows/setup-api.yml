@@ -1,5 +1,5 @@
 name: API_KEY CI Pipeline
-#source: https://stackoverflow.com/questions/59686823/how-can-i-use-github-secrets-in-js-files
+#source: https://www.codegenes.net/blog/using-github-actions-to-create-a-env-file-in-the-workflow/#method-2-using-a-dedicated-action-eg-createdotenv-action
 
 on: [push]
 
@@ -7,19 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v2
-
-      - name: Use Node 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-
-      - name: Install Dependencies (prod)
-        run: yarn install --frozen-lockfile --production
-
-      - name: Run Tests (JEST)
-        run: yarn test --ci --silent --testPathIgnorePatterns=experimental
-        env:
-          CI: true
-          API_KEY: ${{ secrets.TEST_API_KEY }}
+      - name: Generate .env file with create-dotenv-action  
+      uses: dotenvs/create-dotenv-action@v3  
+      with:  
+        # List of secrets to include (format: "KEY=secret_name")  
+        key-value-pairs: |  
+          TEST_API_KEY=TEST_API_KEY 
+        env: |  
+          NODE_ENV=production 
