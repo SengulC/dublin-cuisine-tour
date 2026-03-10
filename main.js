@@ -1,1 +1,1 @@
-console.log(process.env.TEST_API_KEY);
+function testing() {console.log(process.env.TEST_API_KEY);}
