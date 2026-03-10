@@ -7,6 +7,14 @@
   <title>The Asian Trail · Dublin Cuisine Tour</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!--Link to LeafletJS stylesheet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <!--Link to LeafletJS script-->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 </head>
 <body>
 
@@ -24,6 +32,30 @@
     <p class="neighbourhood-eyebrow">Route 01 · North · Budget</p>
     <h2>The Asian Trail</h2>
     <p class="tour-description">A walking route through Dublin's northside taking in five restaurants representing the breadth of Asian cuisine — from Vietnamese pho to Japanese ramen to Indian street food.</p>
+
+    <br>
+    <div id="map"></div>
+
+    <script>
+      var map = L.map('map').setView([53.3472654,-6.2608472], 13);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      // restaurant markers
+      var ninja = L.marker([53.34446,-6.2489166]).addTo(map);
+      var thaispice = L.marker([53.3510126,-6.2511741]).addTo(map);
+      var yangguo = L.marker([53.3503109,-6.2580057]).addTo(map);
+      var ohmy = L.marker([53.3455997,-6.2594968]).addTo(map);
+      var encha = L.marker([53.3488645,-6.2594064]).addTo(map);
+      
+      ninja.bindPopup("<b>Ninja Sushi</b><br>Affordable Japanese cuisine.");
+      thaispice.bindPopup("<b>Thai Spice</b><br>Affordable Thai cuisine.");
+      yangguo.bindPopup("<b>Yang Guo Fu Malatang</b><br>Affordable Chinese cuisine.");
+      ohmy.bindPopup("<b>Oh My Street Food</b><br>Affordable Chinese street food and boba.");
+      encha.bindPopup("<b>ENCHA</b><br>Affordable Japanese cuisine.");
+    </script>
 
     <div class="walking-stops">
 

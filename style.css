@@ -280,3 +280,6 @@ a.walking-route {
   color: inherit;
   text-decoration: none;
 }
+
+/* route.html: map height */
+#map { height: 360px; }
