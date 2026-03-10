@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate .env file with create-dotenv-action  
-      uses: dotenvs/create-dotenv-action@v3  
-      with:  
-        # List of secrets to include (format: "KEY=secret_name")  
-        key-value-pairs: |  
-          TEST_API_KEY=TEST_API_KEY 
-        env: |  
-          NODE_ENV=production 
+        uses: dotenvs/create-dotenv-action@v3
+        with:  
+          # List of secrets to include (format: "KEY=secret_name")  
+          key-value-pairs: |  
+            TEST_API_KEY=TEST_API_KEY 
+          env: |  
+            NODE_ENV=production 
