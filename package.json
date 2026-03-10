@@ -1,4 +1,7 @@
 {
-  "name": "my-test-package",
-  "version": "1.0.0"
+  "name": "my-package",
+  "scripts": {
+    "build": "node main.js",
+    "test": "nodemon main.js"
+  }
 }
