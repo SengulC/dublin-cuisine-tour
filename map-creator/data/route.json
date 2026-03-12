@@ -1,0 +1,205 @@
+{
+  "routes": [
+    {
+      "legs": [
+        {
+          "distanceMeters": 160,
+          "duration": "142s",
+          "staticDuration": "142s",
+          "polyline": {
+            "encodedPolyline": "_irdIbyde@?}ARE@c@rAFjA??MR@?FZ@"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.3468836,
+              "longitude": -6.255696599999999
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3457307,
+              "longitude": -6.2550528
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 39,
+              "staticDuration": "30s",
+              "polyline": {
+                "encodedPolyline": "_irdIbyde@?}A"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3468836,
+                  "longitude": -6.255696599999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3468839,
+                  "longitude": -6.2552254
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on Poolbeg St toward Butt Bridge/R138"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "39 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 121,
+              "staticDuration": "112s",
+              "polyline": {
+                "encodedPolyline": "_irdIdvde@RE@c@rAFjA??MR@?FZ@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3468839,
+                  "longitude": -6.2552254
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3457307,
+                  "longitude": -6.2550528
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Butt Bridge/R138\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.2 km"
+            },
+            "duration": {
+              "text": "2 mins"
+            },
+            "staticDuration": {
+              "text": "2 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 348,
+          "duration": "311s",
+          "staticDuration": "311s",
+          "polyline": {
+            "encodedPolyline": "yardI`ude@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@JBVF?E|@?J"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.3457307,
+              "longitude": -6.2550528
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3483467,
+              "longitude": -6.2554013
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 285,
+              "staticDuration": "240s",
+              "polyline": {
+                "encodedPolyline": "yardI`ude@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@J"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3457307,
+                  "longitude": -6.2550528
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.348378499999995,
+                  "longitude": -6.2549141
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head north on Butt Bridge/R138 toward Townsend St\nContinue to follow Butt Bridge"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 63,
+              "staticDuration": "71s",
+              "polyline": {
+                "encodedPolyline": "krrdIdtde@BVF?E|@?J"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.348378499999995,
+                  "longitude": -6.2549141
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3483467,
+                  "longitude": -6.2554013
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Eden Quay/R105"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "63 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.3 km"
+            },
+            "duration": {
+              "text": "5 mins"
+            },
+            "staticDuration": {
+              "text": "5 mins"
+            }
+          }
+        }
+      ],
+      "polyline": {
+        "encodedPolyline": "_irdIbyde@?}ARE@c@rAFjA??MR@?FZ@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@JBVF?E|@?J"
+      }
+    }
+  ]
+}

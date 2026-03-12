@@ -1,0 +1,24 @@
+{
+  "name": "authoring_dfmt",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SengulC/Authoring_DFMT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SengulC/Authoring_DFMT/issues"
+  },
+  "homepage": "https://github.com/SengulC/Authoring_DFMT#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
