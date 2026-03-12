@@ -297,3 +297,10 @@ a.walking-route {
 
 /* route.html: map height */
 #map { height: 360px; }
+
+.about-image {
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  display: block;
+}
