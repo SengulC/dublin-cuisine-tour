@@ -3,12 +3,9 @@
 import fs from 'fs';
 import 'dotenv/config';
 const API_KEY = process.env.local_dev_key;
-
-const eircodes = [
-  "D02 NX03",
-  "D02 YP46",
-  "D01 DE44"
-];
+import restData from "./data/coords.json" with { type: "json" };
+let eircodes = [];
+restData.filter((entry) => {eircodes.push(entry.eircode)});
 
 async function geocodeEircode(eircode) {
   const response = await fetch(
@@ -27,14 +24,14 @@ async function geocodeEircode(eircode) {
 async function main() {
   const results = [];
 
-  for (const eircode of eircodes) {
-    const coords = await geocodeEircode(eircode);
-    console.log(`${eircode} is at: ${coords.lat}, ${coords.lng}`);
-    results.push(coords);
+  for (const restaurant of restData) {
+    const coords = await geocodeEircode(restaurant.eircode);
+    restaurant.lat = coords.lat; restaurant.lng = coords.lng;
+    results.push(restaurant)
   }
 
   fs.writeFileSync("./data/coords.json", JSON.stringify(results, null, 2));
-  console.log(`Saved ${results.length} coords to ./data/coords.json`);
+  console.log(`Saved ${results.length} restaurant(s) data to ./data/coords.json`);
 }
 
 main();
