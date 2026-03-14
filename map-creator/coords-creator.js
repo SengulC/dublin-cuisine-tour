@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import 'dotenv/config';
-const API_KEY = process.env.dev_key;
+const API_KEY = process.env.local_dev_key;
 
 const eircodes = [
   "D02 NX03",

@@ -4,7 +4,7 @@ import fs from 'fs';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const API_KEY = process.env.dev_key;
+const API_KEY = process.env.local_dev_key;
 
 const coords = JSON.parse(fs.readFileSync("./data/coords.json", "utf-8"));
 
