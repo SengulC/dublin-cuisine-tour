@@ -3,7 +3,8 @@
 import fs from 'fs';
 import 'dotenv/config';
 const API_KEY = process.env.local_dev_key;
-import restData from "./data/coords.json" with { type: "json" };
+
+const restData = JSON.parse(fs.readFileSync("./data/coords.json", "utf-8"));
 let eircodes = [];
 restData.filter((entry) => {eircodes.push(entry.eircode)});
 
