@@ -295,6 +295,13 @@ a.walking-route {
   text-decoration: none;
 }
 
+.about-image {
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  display: block;
+}
+
 /* MAP STUFF */
 /* route.html: map height */
 #map { height: 540px; }
