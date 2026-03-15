@@ -81,8 +81,9 @@
           colorScheme: google.maps.ColorScheme.DARK
         });
 
-        const res = await fetch("/map-creator/data/route.json"); 
-        const routeData = await res.json();
+        const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
+        const res = await fetch(`${base}/map-creator/data/route.json`); 
+        const routeData = await res.json();     
 
         // polyline: array of lat/lng points
         const encodedPolyline = routeData.routes[0].polyline.encodedPolyline;
@@ -104,7 +105,7 @@
         map.fitBounds(bounds);
 
         // adding markers for restaurants
-        const restaurants = await fetch("/map-creator/data/coords.json"); 
+        const restaurants = await fetch(`${base}/map-creator/data/coords.json`); 
         const restData = await restaurants.json();
         restData.forEach((restau) => addMarker(map, restau.lat, restau.lng, restau.name, restau.desc))
       }
@@ -113,7 +114,8 @@
 
     <script>
       window.initWalkingStops = async function() {
-        const restaurants = await fetch("/map-creator/data/coords.json"); 
+        const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
+        const restaurants = await fetch(`${base}/map-creator/data/coords.json`); 
         const restData = await restaurants.json();
         let walking_stops = document.getElementById("walking-stops");
         let i = 0;
