@@ -7,12 +7,12 @@
           "duration": "142s",
           "staticDuration": "142s",
           "polyline": {
-            "encodedPolyline": "_irdIbyde@?}ARE@c@rAFjA??MR@?FZ@"
+            "encodedPolyline": "_irdIbyde@?}ARE@c@rADjA@?MR@?FZ@"
           },
           "startLocation": {
             "latLng": {
-              "latitude": 53.3468836,
-              "longitude": -6.255696599999999
+              "latitude": 53.346885,
+              "longitude": -6.2556965
             }
           },
           "endLocation": {
@@ -30,19 +30,19 @@
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.3468836,
-                  "longitude": -6.255696599999999
+                  "latitude": 53.346885,
+                  "longitude": -6.2556965
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.3468839,
-                  "longitude": -6.2552254
+                  "latitude": 53.3468832,
+                  "longitude": -6.2552255
                 }
               },
               "navigationInstruction": {
                 "maneuver": "DEPART",
-                "instructions": "Head east on Poolbeg St toward Butt Bridge/R138"
+                "instructions": "Head east on Poolbeg St toward Tara St/R138/R802"
               },
               "localizedValues": {
                 "distance": {
@@ -58,12 +58,12 @@
               "distanceMeters": 121,
               "staticDuration": "112s",
               "polyline": {
-                "encodedPolyline": "_irdIdvde@RE@c@rAFjA??MR@?FZ@"
+                "encodedPolyline": "_irdIdvde@RE@c@rADjA@?MR@?FZ@"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.3468839,
-                  "longitude": -6.2552254
+                  "latitude": 53.3468832,
+                  "longitude": -6.2552255
                 }
               },
               "endLocation": {
@@ -74,7 +74,7 @@
               },
               "navigationInstruction": {
                 "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Butt Bridge/R138\nDestination will be on the left"
+                "instructions": "Turn right onto Tara St/R138/R802\nDestination will be on the left"
               },
               "localizedValues": {
                 "distance": {
@@ -104,7 +104,7 @@
           "duration": "311s",
           "staticDuration": "311s",
           "polyline": {
-            "encodedPolyline": "yardI`ude@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@JBVF?E|@?J"
+            "encodedPolyline": "yardI`ude@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUBGn@?J"
           },
           "startLocation": {
             "latLng": {
@@ -121,9 +121,9 @@
           "steps": [
             {
               "distanceMeters": 285,
-              "staticDuration": "240s",
+              "staticDuration": "250s",
               "polyline": {
-                "encodedPolyline": "yardI`ude@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@J"
+                "encodedPolyline": "yardI`ude@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUB"
               },
               "startLocation": {
                 "latLng": {
@@ -133,13 +133,13 @@
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.348378499999995,
-                  "longitude": -6.2549141
+                  "latitude": 53.3483149,
+                  "longitude": -6.2551001
                 }
               },
               "navigationInstruction": {
                 "maneuver": "DEPART",
-                "instructions": "Head north on Butt Bridge/R138 toward Townsend St\nContinue to follow Butt Bridge"
+                "instructions": "Head north on Tara St/R138/R802 toward Townsend St\nContinue to follow R802"
               },
               "localizedValues": {
                 "distance": {
@@ -153,14 +153,14 @@
             },
             {
               "distanceMeters": 63,
-              "staticDuration": "71s",
+              "staticDuration": "61s",
               "polyline": {
-                "encodedPolyline": "krrdIdtde@BVF?E|@?J"
+                "encodedPolyline": "}qrdIjude@Gn@?J"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.348378499999995,
-                  "longitude": -6.2549141
+                  "latitude": 53.3483149,
+                  "longitude": -6.2551001
                 }
               },
               "endLocation": {
@@ -198,7 +198,7 @@
         }
       ],
       "polyline": {
-        "encodedPolyline": "_irdIbyde@?}ARE@c@rAFjA??MR@?FZ@[A?GSA?L}BEe@A?E}BS?OM??J_CGIDi@A@JBVF?E|@?J"
+        "encodedPolyline": "_irdIbyde@?}ARE@c@rADjA@?MR@?FZ@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUBGn@?J"
       }
     }
   ]

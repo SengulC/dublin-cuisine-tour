@@ -7,8 +7,6 @@ dotenv.config();
 const API_KEY = process.env.local_dev_key;
 
 const restData = JSON.parse(fs.readFileSync("./data/coords.json", "utf-8"));
-let coords = [];
-restData.filter((entry) => {coords.push([entry.lat, entry.lng])});
 
 function toLatLng(coord) {
   // convert lat lang data to google-interpretable object
@@ -16,9 +14,9 @@ function toLatLng(coord) {
 }
 
 async function computeRoute() {
-  const origin = toLatLng(coords[0]);
-  const destination = toLatLng(coords[coords.length - 1]);
-  const intermediates = coords.slice(1, -1).map(toLatLng);
+  const origin = toLatLng(restData[0]);
+  const destination = toLatLng(restData[restData.length - 1]);
+  const intermediates = restData.slice(1, -1).map(toLatLng);
 
   const response = await fetch(
     "https://routes.googleapis.com/directions/v2:computeRoutes",
@@ -45,7 +43,7 @@ async function computeRoute() {
   }
 
   fs.writeFileSync("./data/route.json", JSON.stringify(data, null, 2));
-  console.log(`Route saved with ${coords.length} stops`);
+  console.log(`Route saved with ${2 + intermediates.length} stops`);
 }
 
 computeRoute();
