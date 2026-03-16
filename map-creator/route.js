@@ -65,6 +65,14 @@ window.initMap = async function () {
     restData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.desc, i))
 }
 
+function handleLocationError(browserHasGeolocation, pos) {
+    console.log(
+    browserHasGeolocation
+        ? "Error: The Geolocation service failed."
+        : "Error: Your browser doesn't support geolocation.",
+    );
+}
+
 window.initWalkingStops = async function () {
     const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
     const restaurants = await fetch(`${base}/map-creator/data/coords.json`); 
@@ -101,3 +109,24 @@ window.initWalkingStops = async function () {
 
 initMap();
 initWalkingStops();
+
+function getUserLocation() {
+        if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+            };
+            console.log(pos);
+        },
+        () => {
+            handleLocationError(true, map.getCenter());
+        },
+        );
+    } else {
+        handleLocationError(false, map.getCenter());
+    }
+}
+
+getUserLocation();
