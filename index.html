@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dublin's First Multinational Cuisine Tour. Eat the world, one street at a time.">
   <link rel="icon" type="image/x-icon" href="./images/Logo_Gold.png">
   <title>Dublin Cuisine Tour</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav>
-  <a href="index.html" class="site-logo">
-    <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
-  </a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="site-logo">
+      <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
+    </a>
     <div class="page-navigation">
       <!--
         Two destinations only: browse routes or learn who we are.
@@ -25,37 +29,39 @@
     </div>
   </nav>
 
-	<section id="landing">
-	  <div class="landing-bg" id="landingBg"></div>
-	  <h1>Dublin's First<br>Multinational<br>Cuisine Tour</h1>
-	  <p class="tour-tagline">Eat the world, one street at a time</p>
-	  <div class="tour-entry-actions">
-		<a href="discover.html" class="action-discover">Discover</a>
-		<a href="about.html" class="action-about">About</a>
-	  </div>
-	</section>
+  <main>
+    <section id="landing">
+      <div class="landing-bg" id="landingBg"></div>
+      <h1>Dublin's First<br>Multinational<br>Cuisine Tour</h1>
+      <p class="tour-tagline">Eat the world, one street at a time</p>
+      <div class="tour-entry-actions">
+        <a href="discover.html" class="action-discover">Discover</a>
+        <a href="about.html" class="action-about">About</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Dublin Cuisine Tour · Dublin, Ireland</p>
     <p>2025 · All rights reserved</p>
   </footer>
 
-	<script>
-	  const images = [
-		'images/american.jpg',
-		'images/east_asian.jpg',
-		'images/european.jpg',
-		'images/middle-eastern.jpg',
-		'images/south_asian.jpg'
-	  ];
-	  // Pick a different image each visit by incrementing a session counter
-	  const visitKey = 'dct_visit_count';
-	  const count = parseInt(sessionStorage.getItem(visitKey) || '0');
-	  sessionStorage.setItem(visitKey, count + 1);
-	  const chosen = images[count % images.length];
-	  document.getElementById('landingBg').style.backgroundImage = `url('${chosen}')`;
-	</script>
+  <script>
+    const images = [
+      'images/american.jpg',
+      'images/east_asian.jpg',
+      'images/european.jpg',
+      'images/middle-eastern.jpg',
+      'images/south_asian.jpg'
+    ];
+    // Pick a different image each visit by incrementing a session counter
+    const visitKey = 'dct_visit_count';
+    const count = parseInt(sessionStorage.getItem(visitKey) || '0');
+    sessionStorage.setItem(visitKey, count + 1);
+    const chosen = images[count % images.length];
+    document.getElementById('landingBg').style.backgroundImage = `url('${chosen}')`;
+  </script>
 
 </body>
-</html>
 
+</html>
