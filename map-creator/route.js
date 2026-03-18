@@ -1,3 +1,10 @@
+const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
+const coordsJson = await fetch(`${base}/map-creator/data/coords.json`); 
+const coordsData = await coordsJson.json();
+
+const routeJson = await fetch(`${base}/map-creator/data/route.json`); 
+const routeData = await routeJson.json(); 
+
 async function addMarker(map, lat, lng, title, desc, i) {
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const { InfoWindow } = await google.maps.importLibrary("maps");
@@ -35,17 +42,13 @@ window.initMap = async function () {
         zoom: 7,
         colorScheme: google.maps.ColorScheme.DARK
     });
-
-    const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
-    const res = await fetch(`${base}/map-creator/data/route.json`); 
-    const routeData = await res.json();     
-
+     
     // polyline: array of lat/lng points
     const encodedPolyline = routeData.routes[0].polyline.encodedPolyline;
     const path = encoding.decodePath(encodedPolyline);
 
     // drawing route on the map
-    const routeLine = new google.maps.Polyline({
+    const _ = new google.maps.Polyline({
         path,
         geodesic: true,
         strokeColor: "#4285F4",
@@ -59,10 +62,7 @@ window.initMap = async function () {
     path.forEach(point => bounds.extend(point));
     map.fitBounds(bounds);
 
-    // adding markers for restaurants
-    const restaurants = await fetch(`${base}/map-creator/data/coords.json`); 
-    const restData = await restaurants.json();
-    restData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.desc, i))
+    coordsData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.desc, i))
 }
 
 function handleLocationError(browserHasGeolocation, pos) {
@@ -74,12 +74,9 @@ function handleLocationError(browserHasGeolocation, pos) {
 }
 
 window.initWalkingStops = async function () {
-    const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
-    const restaurants = await fetch(`${base}/map-creator/data/coords.json`); 
-    const restData = await restaurants.json();
     let walking_stops = document.getElementById("walking-stops");
     let i = 0;
-    restData.forEach((restau) => {
+    coordsData.forEach((restau) => {
         i++;
         let walking_stop =  document.createElement("div");
         walking_stop.classList.add("walking-stop");
@@ -107,26 +104,60 @@ window.initWalkingStops = async function () {
     )    
 }  
 
+async function getUserLocation() {
+    return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+    // if the device deosn't support geoloc, offer north/south start point
+        reject(new Error("Geolocation not supported"));
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(
+        (position) => resolve(new google.maps.LatLng(
+        position.coords.latitude,
+        position.coords.longitude
+        )),
+        (error) => reject(error)
+    );
+    });
+}
+
+async function findNearestStop() {
+    const { spherical } = await google.maps.importLibrary("geometry");
+    const userPos = await getUserLocation();
+
+    let nearestStop = null;
+    let minDistance = Infinity;
+
+    coordsData.forEach((entry, i) => {
+        let coord = new google.maps.LatLng(entry.lat, entry.lng);
+        const distance = spherical.computeDistanceBetween(userPos, coord);
+        if (distance < minDistance) {
+            minDistance = distance;
+            nearestStop = entry;
+    }
+    });
+
+    return { nearestStop, userPos };
+}
+
+
 initMap();
 initWalkingStops();
 
-function getUserLocation() {
-        if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-        (position) => {
-            const pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-            };
-            console.log(pos);
-        },
-        () => {
-            handleLocationError(true, map.getCenter());
-        },
-        );
-    } else {
-        handleLocationError(false, map.getCenter());
-    }
-}
-
-getUserLocation();
+await findNearestStop()
+    .then(result => {
+        console.log(result.nearestStop);
+        const userToClosestRestaurant = [
+            result.nearestStop,
+            result.userPos
+        ];
+        const userPath = new google.maps.Polyline({
+            path: userToClosestRestaurant,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2,
+        });
+        userPath.setMap(Map); // NEED TO MAKE IT SO THAT INITMAP IS ENTRY POINT AND CALLS THESE FUNCTIONS AS IT NEEDS THEIR DATA..
+    })
+    .catch(err => console.error("findNearestStop failed:", err));

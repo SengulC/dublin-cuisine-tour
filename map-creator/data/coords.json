@@ -22,5 +22,13 @@
     "eircode": "D01 DE44",
     "lat": 53.3483836,
     "lng": -6.255995599999999
+  },
+  {
+    "name": "El Grito",
+    "desc": "A restaurant.",
+    "dish": "A dish.",
+    "eircode": "D01 K3T1",
+    "lat": 53.3573744,
+    "lng": -6.2566283
   }
 ]
