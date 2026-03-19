@@ -41,27 +41,35 @@
         are the only three things users need to decide if a route suits them.
       -->
 
-        <div class="walking-route">
+        <a href="route.html" class="walking-route">
           <p class="route-index">Route 01</p>
-          <h3>Budget Route</h3>
+          <h3>The Asian Trail</h3>
           <div class="route-details">
-            <span>8 restaurants</span>
-            <span>North & South</span>
+            <span>5 restaurants</span>
+            <span>North</span>
             <span>Budget</span>
           </div>
-          <div class="carousel" data-route="budget"></div>
-        </div>
+        </a>
 
-        <div class="walking-route">
+        <a href="route.html" class="walking-route">
           <p class="route-index">Route 02</p>
-          <h3>Experience Route</h3>
+          <h3>Mediterranean Loop</h3>
           <div class="route-details">
-            <span>7 restaurants</span>
-            <span>North & South</span>
+            <span>4 restaurants</span>
+            <span>North</span>
             <span>Experience</span>
           </div>
-          <div class="carousel" data-route="experience"></div>
-        </div>
+        </a>
+
+        <a href="route.html" class="walking-route">
+          <p class="route-index">Route 03</p>
+          <h3>Latin Quarter</h3>
+          <div class="route-details">
+            <span>6 restaurants</span>
+            <span>South</span>
+            <span>Budget</span>
+          </div>
+        </a>
 
       </div>
     </section>
@@ -71,73 +79,6 @@
     <p>Dublin Cuisine Tour · Dublin, Ireland</p>
     <p>2025 · All rights reserved</p>
   </footer>
-
-  <!-- routes.json file for the carousels -->
-  <script>
-  fetch('routes.json')
-    .then(res => res.json())
-    .then(data => {
-      document.querySelectorAll('.carousel').forEach(carousel => {
-        const routeKey = carousel.dataset.route;
-        const images = data[routeKey];
-
-        let current = 0;
-        let interval;
-
-        const img = document.createElement('div');
-        img.className = 'carousel-image';
-
-        const credit = document.createElement('div');
-        credit.className = 'carousel-credit';
-
-        const title = document.createElement('div');
-        title.className = 'carousel-title';
-
-        const dots = document.createElement('div');
-        dots.className = 'carousel-dots';
-
-        function render() {
-          img.style.backgroundImage = `url('${images[current].src}')`;
-          credit.textContent = `By ${images[current].author}`;
-          title.textContent = images[current].name;
-
-          dots.innerHTML = '';
-          images.forEach((_, i) => {
-            const dot = document.createElement('span');
-            dot.className = i === current ? 'active' : '';
-            dot.onclick = () => {
-              current = i;
-              render();
-              restartAuto();
-            };
-            dots.appendChild(dot);
-          });
-        }
-
-        function nextSlide() {
-          current = (current + 1) % images.length;
-          render();
-        }
-
-        function startAuto() {
-          interval = setInterval(nextSlide, 3000);
-        }
-
-        function restartAuto() {
-          clearInterval(interval);
-          startAuto();
-        }
-
-        carousel.appendChild(img);
-        carousel.appendChild(title);
-        carousel.appendChild(credit);
-        carousel.appendChild(dots);
-
-        render();
-        startAuto();
-      });
-    });
-</script>
 
 </body>
 
