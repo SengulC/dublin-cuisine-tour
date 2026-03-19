@@ -1,119 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The Asian Trail: a walking route through Dublin's northside taking in five restaurants from Vietnamese pho to Indian street food.">
   <link rel="icon" type="image/x-icon" href="./images/Logo_Gold.png">
   <title>The Asian Trail · Dublin Cuisine Tour</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!--Link to LeafletJS stylesheet-->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-  <!--Link to LeafletJS script-->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+  <script>
+    // lazy loading
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.googleapis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+      ({ key: "AIzaSyDSfohvEvPCr_MFuSF-_I3XTJO1MLW_c9M", v: "weekly" });
+    // 'AIzaSyDSfohvEvPCr_MFuSF-_I3XTJO1MLW_c9M' can be shared bc ive restricted it
+  </script>
+  <script type="module" src="./map-creator/route.js"></script>
 </head>
+
 <body>
 
-  <nav>
-  <a href="index.html" class="site-logo">
-    <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
-  </a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="site-logo">
+      <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
+    </a>
     <div class="page-navigation">
       <a href="discover.html">Routes</a>
       <a href="about.html">About</a>
     </div>
   </nav>
 
-  <section id="route">
-    <p class="neighbourhood-eyebrow">Route 01 · North · Budget</p>
-    <h2>The Asian Trail</h2>
-    <p class="tour-description">A walking route through Dublin's northside taking in five restaurants representing the breadth of Asian cuisine — from Vietnamese pho to Japanese ramen to Indian street food.</p>
+  <main>
+    <section id="route">
+      <p class="neighbourhood-eyebrow">Route 01 · North · Budget</p>
+      <h2>The Asian Trail</h2>
+      <p class="tour-description">A walking route through Dublin's northside taking in five restaurants representing the
+        breadth of Asian cuisine — from Vietnamese pho to Japanese ramen to Indian street food.</p>
 
-    <br>
-    <div id="map"></div>
+      <br>
+      <div id="map" role="application"
+        aria-label="Interactive map showing the Asian Trail walking route and restaurant stops"></div>
 
-    <script>
-      var map = L.map('map').setView([53.3472654,-6.2608472], 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
-
-      // restaurant markers
-      var ninja = L.marker([53.34446,-6.2489166]).addTo(map);
-      var thaispice = L.marker([53.3510126,-6.2511741]).addTo(map);
-      var yangguo = L.marker([53.3503109,-6.2580057]).addTo(map);
-      var ohmy = L.marker([53.3455997,-6.2594968]).addTo(map);
-      var encha = L.marker([53.3488645,-6.2594064]).addTo(map);
-      
-      ninja.bindPopup("<b>Ninja Sushi</b><br>Affordable Japanese cuisine.");
-      thaispice.bindPopup("<b>Thai Spice</b><br>Affordable Thai cuisine.");
-      yangguo.bindPopup("<b>Yang Guo Fu Malatang</b><br>Affordable Chinese cuisine.");
-      ohmy.bindPopup("<b>Oh My Street Food</b><br>Affordable Chinese street food and boba.");
-      encha.bindPopup("<b>ENCHA</b><br>Affordable Japanese cuisine.");
-    </script>
-
-    <div class="walking-stops">
-
+    <div id="walking-stops"> 
       <!--
         Each stop lists a restaurant name, its cuisine, and the
         recommended dish. These are the three things a visitor
         needs to know before they arrive at each door.
       -->
 
-      <div class="walking-stop">
-        <p class="stop-index">Stop 01</p>
-        <h3>Restaurant Name</h3>
-        <div class="stop-details">
-          <span>Cuisine</span>
-          <span>Recommended dish</span>
-        </div>
+      <!-- Generated via route.js script -->
+      <!-- EXAMPLE TEMPLATE IF YOU WANT TO EDIT THE CSS: -->
+      <!-- <div class="walking-stop">
+      <p class="stop-index">Stop 01</p>
+      <h3>Restaurant Name</h3>
+      <div class="stop-details">
+        <span>Cuisine</span>
+        <span>Recommended dish</span>
       </div>
-
-      <div class="walking-stop">
-        <p class="stop-index">Stop 02</p>
-        <h3>Restaurant Name</h3>
-        <div class="stop-details">
-          <span>Cuisine</span>
-          <span>Recommended dish</span>
-        </div>
-      </div>
-
-      <div class="walking-stop">
-        <p class="stop-index">Stop 03</p>
-        <h3>Restaurant Name</h3>
-        <div class="stop-details">
-          <span>Cuisine</span>
-          <span>Recommended dish</span>
-        </div>
-      </div>
-
-      <div class="walking-stop">
-        <p class="stop-index">Stop 04</p>
-        <h3>Restaurant Name</h3>
-        <div class="stop-details">
-          <span>Cuisine</span>
-          <span>Recommended dish</span>
-        </div>
-      </div>
-
-      <div class="walking-stop">
-        <p class="stop-index">Stop 05</p>
-        <h3>Restaurant Name</h3>
-        <div class="stop-details">
-          <span>Cuisine</span>
-          <span>Recommended dish</span>
-        </div>
-      </div>
-
+    </div> -->
     </div>
 
-    <a href="discover.html" class="action-about" style="display:inline-block; margin-top: 32px;">← Back to Routes</a>
-  </section>
+      <a href="discover.html" class="action-about" style="display:inline-block; margin-top: 32px;">← Back to Routes</a>
+    </section>
+  </main>
 
   <footer>
     <p>Dublin Cuisine Tour · Dublin, Ireland</p>
@@ -121,5 +72,5 @@
   </footer>
 
 </body>
-</html>
 
+</html>

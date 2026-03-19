@@ -248,7 +248,7 @@ footer p {
    Mirrors the walking-route card pattern from discover.html
    so the visual language stays consistent across pages. */
 
-.walking-stops {
+#walking-stops {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
@@ -295,12 +295,171 @@ a.walking-route {
   text-decoration: none;
 }
 
-/* route.html: map height */
-#map { height: 360px; }
+/* About Page Specific Styles */
+.hero {
+  padding: 60px 24px 20px;
+  text-align: center;
+}
 
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.missionbox {
+  background: #111;
+  border: 1px solid #222;
+  margin: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.missionbox h2 {
+  font-size: 28px;
+}
+
+.statswrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 24px;
+  margin-top: 10px;
+}
+
+.factbox {
+  flex: 1 1 calc(50% - 6px);
+  background: #0a0a0a;
+  border-left: 3px solid var(--gold);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.factbox .fact-figure {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.factbox .fact-name {
+  color: #777;
+}
+
+.teambox {
+  padding: 60px 24px;
+}
+
+.teamboxinner {
+  border: 1px solid #333;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.teamboxinner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gold);
+}
 .about-image {
   width: 100%;
   height: auto;
   margin-top: 24px;
   display: block;
 }
+
+/* MAP STUFF */
+/* route.html: map height */
+#map { height: 540px; }
+
+.map-marker-popup {
+  text-align: center;
+  color: black;
+}
+
+
+/* Index button hover styles */
+.action-discover:hover {
+  border-color: var(--black);
+  cursor: pointer;
+}
+.action-about:hover {
+  border-color: var(--gold);
+  cursor: pointer;
+}
+
+
+/* discover.html image carousels style */
+.carousel {
+  margin-top: 16px;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 8px;
+  letter-spacing: 1px;
+}
+
+.carousel-credit {
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  font-size: 10px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 6px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.carousel-dots span {
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots span.active {
+  background: var(--gold);
+}
+

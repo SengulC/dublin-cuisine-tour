@@ -1,0 +1,205 @@
+{
+  "routes": [
+    {
+      "legs": [
+        {
+          "distanceMeters": 160,
+          "duration": "142s",
+          "staticDuration": "142s",
+          "polyline": {
+            "encodedPolyline": "_irdIbyde@?}ARE@c@rADjA@?MR@?FZ@"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.346885,
+              "longitude": -6.2556965
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3457307,
+              "longitude": -6.2550528
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 39,
+              "staticDuration": "30s",
+              "polyline": {
+                "encodedPolyline": "_irdIbyde@?}A"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.346885,
+                  "longitude": -6.2556965
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3468832,
+                  "longitude": -6.2552255
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on Poolbeg St toward Tara St/R138/R802"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "39 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 121,
+              "staticDuration": "112s",
+              "polyline": {
+                "encodedPolyline": "_irdIdvde@RE@c@rADjA@?MR@?FZ@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3468832,
+                  "longitude": -6.2552255
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3457307,
+                  "longitude": -6.2550528
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Tara St/R138/R802\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.2 km"
+            },
+            "duration": {
+              "text": "2 mins"
+            },
+            "staticDuration": {
+              "text": "2 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 348,
+          "duration": "311s",
+          "staticDuration": "311s",
+          "polyline": {
+            "encodedPolyline": "yardI`ude@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUBGn@?J"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.3457307,
+              "longitude": -6.2550528
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3483467,
+              "longitude": -6.2554013
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 285,
+              "staticDuration": "250s",
+              "polyline": {
+                "encodedPolyline": "yardI`ude@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3457307,
+                  "longitude": -6.2550528
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3483149,
+                  "longitude": -6.2551001
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head north on Tara St/R138/R802 toward Townsend St\nContinue to follow R802"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 63,
+              "staticDuration": "61s",
+              "polyline": {
+                "encodedPolyline": "}qrdIjude@Gn@?J"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3483149,
+                  "longitude": -6.2551001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3483467,
+                  "longitude": -6.2554013
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Eden Quay/R105"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "63 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.3 km"
+            },
+            "duration": {
+              "text": "5 mins"
+            },
+            "staticDuration": {
+              "text": "5 mins"
+            }
+          }
+        }
+      ],
+      "polyline": {
+        "encodedPolyline": "_irdIbyde@?}ARE@c@rADjA@?MR@?FZ@[A?GSA?LoBCs@C?EwBS?p@G??BQ??GwBIOE?FUBGn@?J"
+      }
+    }
+  ]
+}

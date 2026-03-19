@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Discover our curated walking food tours across Dublin. Explore authentic cuisines from around the world.">
   <link rel="icon" type="image/x-icon" href="./images/Logo_Gold.png">
   <title>Discover Routes · Dublin Cuisine Tour</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav>
-  <a href="index.html" class="site-logo">
-    <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
-  </a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="site-logo">
+      <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
+    </a>
     <div class="page-navigation">
       <a href="discover.html">Routes</a>
       <a href="about.html">About</a>
     </div>
   </nav>
 
-  <section id="discover">
-    <p class="neighbourhood-eyebrow">Explore</p>
-    <h2>Curated Routes</h2>
-    <p class="tour-description">Walk Dublin's streets and discover authentic cuisines from around the world with handpicked restaurants, hidden gems, and local landmarks.</p>
+  <main>
+    <section id="discover">
+      <p class="neighbourhood-eyebrow">Explore</p>
+      <h2>Curated Routes</h2>
+      <p class="tour-description">Walk Dublin's streets and discover authentic cuisines from around the world with
+        handpicked restaurants, hidden gems, and local landmarks.</p>
 
-    <div class="walking-routes">
+      <div class="walking-routes">
 
-      <!--
+        <!--
         Each route card links to its own dedicated page showing the full
         stop-by-stop map, restaurant details, and pricing.
         The three details shown here (count, neighbourhood, price tier)
         are the only three things users need to decide if a route suits them.
       -->
 
-      <a href="route.html" class="walking-route">
-        <p class="route-index">Route 01</p>
-        <h3>The Asian Trail</h3>
-        <div class="route-details">
-          <span>5 restaurants</span>
-          <span>North</span>
-          <span>Budget</span>
+        <div class="walking-route">
+          <p class="route-index">Route 01</p>
+          <h3>Budget Route</h3>
+          <div class="route-details">
+            <span>8 restaurants</span>
+            <span>North & South</span>
+            <span>Budget</span>
+          </div>
+          <div class="carousel" data-route="budget"></div>
         </div>
-      </a>
 
-      <a href="route.html" class="walking-route">
-        <p class="route-index">Route 02</p>
-        <h3>Mediterranean Loop</h3>
-        <div class="route-details">
-          <span>4 restaurants</span>
-          <span>North</span>
-          <span>Experience</span>
+        <div class="walking-route">
+          <p class="route-index">Route 02</p>
+          <h3>Experience Route</h3>
+          <div class="route-details">
+            <span>7 restaurants</span>
+            <span>North & South</span>
+            <span>Experience</span>
+          </div>
+          <div class="carousel" data-route="experience"></div>
         </div>
-      </a>
 
-      <a href="route.html" class="walking-route">
-        <p class="route-index">Route 03</p>
-        <h3>Latin Quarter</h3>
-        <div class="route-details">
-          <span>6 restaurants</span>
-          <span>South</span>
-          <span>Budget</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Dublin Cuisine Tour · Dublin, Ireland</p>
     <p>2025 · All rights reserved</p>
   </footer>
 
-</body>
-</html>
+  <!-- routes.json file for the carousels -->
+  <script>
+  fetch('routes.json')
+    .then(res => res.json())
+    .then(data => {
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        const routeKey = carousel.dataset.route;
+        const images = data[routeKey];
 
+        let current = 0;
+        let interval;
+
+        const img = document.createElement('div');
+        img.className = 'carousel-image';
+
+        const credit = document.createElement('div');
+        credit.className = 'carousel-credit';
+
+        const title = document.createElement('div');
+        title.className = 'carousel-title';
+
+        const dots = document.createElement('div');
+        dots.className = 'carousel-dots';
+
+        function render() {
+          img.style.backgroundImage = `url('${images[current].src}')`;
+          credit.textContent = `By ${images[current].author}`;
+          title.textContent = images[current].name;
+
+          dots.innerHTML = '';
+          images.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.className = i === current ? 'active' : '';
+            dot.onclick = () => {
+              current = i;
+              render();
+              restartAuto();
+            };
+            dots.appendChild(dot);
+          });
+        }
+
+        function nextSlide() {
+          current = (current + 1) % images.length;
+          render();
+        }
+
+        function startAuto() {
+          interval = setInterval(nextSlide, 3000);
+        }
+
+        function restartAuto() {
+          clearInterval(interval);
+          startAuto();
+        }
+
+        carousel.appendChild(img);
+        carousel.appendChild(title);
+        carousel.appendChild(credit);
+        carousel.appendChild(dots);
+
+        render();
+        startAuto();
+      });
+    });
+</script>
+
+</body>
+
+</html>
