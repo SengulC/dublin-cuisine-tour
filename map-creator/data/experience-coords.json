@@ -1,35 +1,11 @@
 [
   {
-    "name": "M&L Szechuan Chinese",
-    "desc": "Chinese restaurant.",
-    "dish": "A dish.",
-    "eircode": "D01 K8K3",
-    "lat": 53.3506295,
-    "lng": -6.259530799999999
-  },
-  {
-    "name": "Andhra Bhavan",
-    "desc": "Indian restaurant.",
-    "dish": "A dish.",
-    "eircode": "D01 A489",
-    "lat": 53.347714,
-    "lng": -6.2639577
-  },
-  {
-    "name": "The Temple Bar Pub",
+    "name": "The Hairy Lemon",
     "desc": "Irish Pub.",
-    "dish": "A dish.",
-    "eircode": "D02 N725",
-    "lat": 53.3454743,
-    "lng": -6.2641938
-  },
-  {
-    "name": "Kyodai Izakaya",
-    "desc": "Japanese Restaurant.",
-    "dish": "A dish.",
-    "eircode": "D01 V6F4",
-    "lat": 53.34811620000001,
-    "lng": -6.257919900000001
+    "dish": "",
+    "eircode": "D02 NV08",
+    "lat": 53.34122199999999,
+    "lng": -6.263875199999999
   },
   {
     "name": "Acapulco Mexican Restaurant",
@@ -40,12 +16,28 @@
     "lng": -6.264238199999999
   },
   {
-    "name": "The Hairy Lemon",
+    "name": "The Temple Bar Pub",
     "desc": "Irish Pub.",
-    "dish": "",
-    "eircode": "D02 NV08",
-    "lat": 53.34122199999999,
-    "lng": -6.263875199999999
+    "dish": "A dish.",
+    "eircode": "D02 N725",
+    "lat": 53.3454743,
+    "lng": -6.2641938
+  },
+  {
+    "name": "Andhra Bhavan",
+    "desc": "Indian restaurant.",
+    "dish": "A dish.",
+    "eircode": "D01 A489",
+    "lat": 53.347714,
+    "lng": -6.2639577
+  },
+  {
+    "name": "Kyodai Izakaya",
+    "desc": "Japanese Restaurant.",
+    "dish": "A dish.",
+    "eircode": "D01 V6F4",
+    "lat": 53.34811620000001,
+    "lng": -6.257919900000001
   },
   {
     "name": "The Celt",
@@ -54,5 +46,13 @@
     "eircode": "D01 YK51",
     "lat": 53.35049249999999,
     "lng": -6.2550324
+  },
+  {
+    "name": "M&L Szechuan Chinese",
+    "desc": "Chinese restaurant.",
+    "dish": "A dish.",
+    "eircode": "D01 K8K3",
+    "lat": 53.3506295,
+    "lng": -6.259530799999999
   }
 ]

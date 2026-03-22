@@ -3,1098 +3,6 @@
     {
       "legs": [
         {
-          "distanceMeters": 472,
-          "duration": "397s",
-          "staticDuration": "397s",
-          "polyline": {
-            "encodedPolyline": "kerdIh}ee@PjAC?XzBB?@LC?b@rD~@GdCIHQnCEBNDjE`BE"
-          },
-          "startLocation": {
-            "latLng": {
-              "latitude": 53.346303299999995,
-              "longitude": -6.2614886
-            }
-          },
-          "endLocation": {
-            "latLng": {
-              "latitude": 53.343614099999996,
-              "longitude": -6.264318299999999
-            }
-          },
-          "steps": [
-            {
-              "distanceMeters": 137,
-              "staticDuration": "113s",
-              "polyline": {
-                "encodedPolyline": "kerdIh}ee@PjAC?XzBB?@LC?b@rD"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.346303299999995,
-                  "longitude": -6.2614886
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3459079,
-                  "longitude": -6.2634568999999995
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "DEPART",
-                "instructions": "Head west on Aston Quay/R148 toward Bedford Row\nContinue to follow R148"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.1 km"
-                },
-                "staticDuration": {
-                  "text": "2 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 43,
-              "staticDuration": "33s",
-              "polyline": {
-                "encodedPolyline": "}brdIrife@~@G"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3459079,
-                  "longitude": -6.2634568999999995
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3455881,
-                  "longitude": -6.2634226
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Fownes St Lower"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "43 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 153,
-              "staticDuration": "134s",
-              "polyline": {
-                "encodedPolyline": "}`rdIjife@dCIHQnCE"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3455881,
-                  "longitude": -6.2634226
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344154599999996,
-                  "longitude": -6.2632509
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto Fownes St Upper"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "2 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 75,
-              "staticDuration": "62s",
-              "polyline": {
-                "encodedPolyline": "}wqdIhhfe@BNDjE"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344154599999996,
-                  "longitude": -6.2632509
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3440958,
-                  "longitude": -6.2643457
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Dame St/R137"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "75 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 64,
-              "staticDuration": "55s",
-              "polyline": {
-                "encodedPolyline": "swqdIdofe@`BE"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3440958,
-                  "longitude": -6.2643457
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.343614099999996,
-                  "longitude": -6.264318299999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto South Great George's Street/R114\nDestination will be on the left"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "64 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            }
-          ],
-          "localizedValues": {
-            "distance": {
-              "text": "0.5 km"
-            },
-            "duration": {
-              "text": "7 mins"
-            },
-            "staticDuration": {
-              "text": "7 mins"
-            }
-          }
-        },
-        {
-          "distanceMeters": 1689,
-          "duration": "1415s",
-          "staticDuration": "1415s",
-          "polyline": {
-            "encodedPolyline": "qtqdI~nfe@}AD?^C??jGCh@FfC?p@Bj@aE|@u@RPnFFj@RdE^jJ?V]??F{ANA`A?hAC|AOxDU~ECh@FDEl@AFWIOhCgAvJCZOxAGCAV@?g@jEAd@iAWi@OcC_@_HgAWOq@AKE@OSGBg@"
-          },
-          "startLocation": {
-            "latLng": {
-              "latitude": 53.343614099999996,
-              "longitude": -6.264318299999999
-            }
-          },
-          "endLocation": {
-            "latLng": {
-              "latitude": 53.349847499999996,
-              "longitude": -6.279083099999999
-            }
-          },
-          "steps": [
-            {
-              "distanceMeters": 64,
-              "staticDuration": "48s",
-              "polyline": {
-                "encodedPolyline": "qtqdI~nfe@}AD"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.343614099999996,
-                  "longitude": -6.264318299999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344082199999995,
-                  "longitude": -6.2643454
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "DEPART",
-                "instructions": "Head north on South Great George's Street/R114 toward Dame Ln"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "64 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 184,
-              "staticDuration": "150s",
-              "polyline": {
-                "encodedPolyline": "owqdIdofe@?^C??jGCh@FfC?p@Bj@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344082199999995,
-                  "longitude": -6.2643454
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Dame St/R137"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "3 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 140,
-              "staticDuration": "111s",
-              "polyline": {
-                "encodedPolyline": "kwqdI`age@aE|@u@R"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.345302200000006,
-                  "longitude": -6.2676221
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Parliament St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.1 km"
-                },
-                "staticDuration": {
-                  "text": "2 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 299,
-              "staticDuration": "238s",
-              "polyline": {
-                "encodedPolyline": "c_rdIrcge@PnFFj@RdE^jJ?V"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.345302200000006,
-                  "longitude": -6.2676221
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3449068,
-                  "longitude": -6.2719708
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Essex Quay/R148\nContinue to follow R148"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.3 km"
-                },
-                "staticDuration": {
-                  "text": "4 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 64,
-              "staticDuration": "63s",
-              "polyline": {
-                "encodedPolyline": "u|qdIx~ge@]??F{AN"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3449068,
-                  "longitude": -6.2719708
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.345515799999994,
-                  "longitude": -6.2720913
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto O'Donovan Rossa Bridge"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "64 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 555,
-              "staticDuration": "473s",
-              "polyline": {
-                "encodedPolyline": "o`rdIp_he@A`A?hAC|AOxDU~ECh@FDEl@AFWIOhCgAvJCZOxAGCAV@?g@jEAd@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.345515799999994,
-                  "longitude": -6.2720913
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.346666199999994,
-                  "longitude": -6.2802435999999995
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Inns Quay/R148\nContinue to follow R148"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.6 km"
-                },
-                "staticDuration": {
-                  "text": "8 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 358,
-              "staticDuration": "302s",
-              "polyline": {
-                "encodedPolyline": "ugrdInrie@iAWi@OcC_@_HgAWOq@AKE@OSG"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.346666199999994,
-                  "longitude": -6.2802435999999995
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.349874,
-                  "longitude": -6.2792765
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Queen St/R804/R805\nContinue to follow Queen St/R804"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.4 km"
-                },
-                "staticDuration": {
-                  "text": "5 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 25,
-              "staticDuration": "30s",
-              "polyline": {
-                "encodedPolyline": "u{rdInlie@Bg@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.349874,
-                  "longitude": -6.2792765
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.349847499999996,
-                  "longitude": -6.279083099999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto King St N/R804\nDestination will be on the left"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "25 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            }
-          ],
-          "localizedValues": {
-            "distance": {
-              "text": "1.7 km"
-            },
-            "duration": {
-              "text": "24 mins"
-            },
-            "staticDuration": {
-              "text": "24 mins"
-            }
-          }
-        },
-        {
-          "distanceMeters": 1718,
-          "duration": "1434s",
-          "staticDuration": "1434s",
-          "polyline": {
-            "encodedPolyline": "q{rdIfkie@Cf@D@LDANXDb@@`@PfHhAzB^hBb@@e@f@kEA?@WFBNyAB[fAwJNqCGCHi@DB@ELDReFLsBFiBDkCAw@@e@zAOUyIOuC]_LNEBf@lBi@hCg@C}@AaAAiAC[Bi@?kGB??_@C?AqBj@EFKA["
-          },
-          "startLocation": {
-            "latLng": {
-              "latitude": 53.349847499999996,
-              "longitude": -6.279083099999999
-            }
-          },
-          "endLocation": {
-            "latLng": {
-              "latitude": 53.343857,
-              "longitude": -6.2635475
-            }
-          },
-          "steps": [
-            {
-              "distanceMeters": 25,
-              "staticDuration": "20s",
-              "polyline": {
-                "encodedPolyline": "q{rdIfkie@Cf@D@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.349847499999996,
-                  "longitude": -6.279083099999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3498447,
-                  "longitude": -6.279287999999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "DEPART",
-                "instructions": "Head west on King St N/R804 toward Queen St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "25 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 358,
-              "staticDuration": "290s",
-              "polyline": {
-                "encodedPolyline": "o{rdIplie@LDANXDb@@`@PfHhAzB^hBb@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3498447,
-                  "longitude": -6.279287999999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.34666610000001,
-                  "longitude": -6.2802437
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Queen St/R804"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.4 km"
-                },
-                "staticDuration": {
-                  "text": "5 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 555,
-              "staticDuration": "466s",
-              "polyline": {
-                "encodedPolyline": "ugrdInrie@@e@f@kEA?@WFBNyAB[fAwJNqCGCHi@DB@ELDReFLsBFiBDkCAw@@e@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.34666610000001,
-                  "longitude": -6.2802437
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.345515799999994,
-                  "longitude": -6.2720913
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Arran Quay/R148\nContinue to follow R148"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.6 km"
-                },
-                "staticDuration": {
-                  "text": "8 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 64,
-              "staticDuration": "53s",
-              "polyline": {
-                "encodedPolyline": "o`rdIp_he@zAO"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.345515799999994,
-                  "longitude": -6.2720913
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3450553,
-                  "longitude": -6.2720107
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto O'Donovan Rossa Bridge"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "64 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 299,
-              "staticDuration": "246s",
-              "polyline": {
-                "encodedPolyline": "s}qdI`_he@UyIOuC]_L"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3450553,
-                  "longitude": -6.2720107
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.345405,
-                  "longitude": -6.2674467
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Wood Quay/R148\nContinue to follow R148"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.3 km"
-                },
-                "staticDuration": {
-                  "text": "4 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 140,
-              "staticDuration": "130s",
-              "polyline": {
-                "encodedPolyline": "w_rdIpbge@NEBf@lBi@hCg@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.345405,
-                  "longitude": -6.2674467
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Parliament St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.1 km"
-                },
-                "staticDuration": {
-                  "text": "2 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 228,
-              "staticDuration": "190s",
-              "polyline": {
-                "encodedPolyline": "kwqdI`age@C}@AaAAiAC[Bi@?kGB??_@C?AqB"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3441141,
-                  "longitude": -6.2637787
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Dame St/R137"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "3 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 36,
-              "staticDuration": "29s",
-              "polyline": {
-                "encodedPolyline": "uwqdIrkfe@j@E"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3441141,
-                  "longitude": -6.2637787
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.34389170000001,
-                  "longitude": -6.263752800000001
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right toward Dame Ln"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "36 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 13,
-              "staticDuration": "10s",
-              "polyline": {
-                "encodedPolyline": "ivqdIlkfe@FKA["
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.34389170000001,
-                  "longitude": -6.263752800000001
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.343857,
-                  "longitude": -6.2635475
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Dame Ln\nDestination will be on the right"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "13 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            }
-          ],
-          "localizedValues": {
-            "distance": {
-              "text": "1.7 km"
-            },
-            "duration": {
-              "text": "24 mins"
-            },
-            "staticDuration": {
-              "text": "24 mins"
-            }
-          }
-        },
-        {
-          "distanceMeters": 593,
-          "duration": "487s",
-          "staticDuration": "487s",
-          "polyline": {
-            "encodedPolyline": "cvqdIdjfe@@ZxCKAyCNB~ErCDIr@b@NBv@d@R{@R[l@i@^BVNv@gHLD"
-          },
-          "startLocation": {
-            "latLng": {
-              "latitude": 53.343857,
-              "longitude": -6.2635475
-            }
-          },
-          "endLocation": {
-            "latLng": {
-              "latitude": 53.340184099999995,
-              "longitude": -6.2619608
-            }
-          },
-          "steps": [
-            {
-              "distanceMeters": 13,
-              "staticDuration": "11s",
-              "polyline": {
-                "encodedPolyline": "cvqdIdjfe@@Z"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.343857,
-                  "longitude": -6.2635475
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.343851799999996,
-                  "longitude": -6.2636873
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "DEPART",
-                "instructions": "Head west on Dame Ln toward Dame Ct"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "13 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 95,
-              "staticDuration": "81s",
-              "polyline": {
-                "encodedPolyline": "avqdI`kfe@xCK"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.343851799999996,
-                  "longitude": -6.2636873
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.343077699999995,
-                  "longitude": -6.263634799999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Dame Ct"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.1 km"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 55,
-              "staticDuration": "43s",
-              "polyline": {
-                "encodedPolyline": "gqqdItjfe@AyC"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.343077699999995,
-                  "longitude": -6.263634799999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3430883,
-                  "longitude": -6.262861699999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Exchequer St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "55 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 218,
-              "staticDuration": "175s",
-              "polyline": {
-                "encodedPolyline": "iqqdIzefe@NB~ErCDIr@b@NBv@d@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3430883,
-                  "longitude": -6.262861699999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.34124,
-                  "longitude": -6.2639591
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Drury St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "3 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 66,
-              "staticDuration": "53s",
-              "polyline": {
-                "encodedPolyline": "weqdIvlfe@R{@R[l@i@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.34124,
-                  "longitude": -6.2639591
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3408119,
-                  "longitude": -6.2633057999999995
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Stephen Street Lower"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "66 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 30,
-              "staticDuration": "29s",
-              "polyline": {
-                "encodedPolyline": "acqdIthfe@^BVN"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3408119,
-                  "longitude": -6.2633057999999995
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.340531399999996,
-                  "longitude": -6.263406100000001
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_SLIGHT_RIGHT",
-                "instructions": "Slight right onto Johnson Pl"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "30 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 109,
-              "staticDuration": "89s",
-              "polyline": {
-                "encodedPolyline": "iaqdIhife@v@gH"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.340531399999996,
-                  "longitude": -6.263406100000001
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.340246099999995,
-                  "longitude": -6.2619263
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto King St S"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.1 km"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 7,
-              "staticDuration": "6s",
-              "polyline": {
-                "encodedPolyline": "q_qdI``fe@LD"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.340246099999995,
-                  "longitude": -6.2619263
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.340184099999995,
-                  "longitude": -6.2619608
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "7 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            }
-          ],
-          "localizedValues": {
-            "distance": {
-              "text": "0.6 km"
-            },
-            "duration": {
-              "text": "8 mins"
-            },
-            "staticDuration": {
-              "text": "8 mins"
-            }
-          }
-        },
-        {
           "distanceMeters": 284,
           "duration": "230s",
           "staticDuration": "230s",
@@ -1283,11 +191,11 @@
           }
         },
         {
-          "distanceMeters": 1319,
-          "duration": "1083s",
-          "staticDuration": "1083s",
+          "distanceMeters": 595,
+          "duration": "478s",
+          "staticDuration": "478s",
           "polyline": {
-            "encodedPolyline": "aeqdI`ree@QxCqBkA_@~CY~AY~BDn@?HADAJCLKEe@`DKr@WnDWSi@CMLa@?a@E}AHk@@?^C??jGCh@FfC?p@Bj@aE|@u@RCg@OD@TcB`@QN_@@@XmAVAK}C~@B\\I[_FnAK{A"
+            "encodedPolyline": "aeqdI`ree@QxCuF_Dc@Qi@dEI@]`BEl@GzCqAm@GGcAzAF`G"
           },
           "startLocation": {
             "latLng": {
@@ -1297,8 +205,8 @@
           },
           "endLocation": {
             "latLng": {
-              "latitude": 53.3485323,
-              "longitude": -6.2682797
+              "latitude": 53.343857,
+              "longitude": -6.2635475
             }
           },
           "steps": [
@@ -1335,10 +243,10 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 68,
-              "staticDuration": "53s",
+              "distanceMeters": 167,
+              "staticDuration": "131s",
               "polyline": {
-                "encodedPolyline": "seqdIzvee@qBkA"
+                "encodedPolyline": "seqdIzvee@uF_Dc@Q"
               },
               "startLocation": {
                 "latLng": {
@@ -1348,8 +256,8 @@
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.3417877,
-                  "longitude": -6.2600834999999995
+                  "latitude": 53.3426257,
+                  "longitude": -6.259566500000001
                 }
               },
               "navigationInstruction": {
@@ -1358,7 +266,71 @@
               },
               "localizedValues": {
                 "distance": {
-                  "text": "68 m"
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 173,
+              "staticDuration": "143s",
+              "polyline": {
+                "encodedPolyline": "mnqdIhqee@i@dEI@]`BEl@GzC"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3426257,
+                  "longitude": -6.259566500000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3431055,
+                  "longitude": -6.262065199999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Wicklow St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 60,
+              "staticDuration": "50s",
+              "polyline": {
+                "encodedPolyline": "mqqdI|`fe@qAm@GG"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3431055,
+                  "longitude": -6.262065199999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3435583,
+                  "longitude": -6.2617959
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto St Andrew's St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "60 m"
                 },
                 "staticDuration": {
                   "text": "1 min"
@@ -1367,30 +339,449 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 91,
-              "staticDuration": "76s",
+              "distanceMeters": 55,
+              "staticDuration": "41s",
               "polyline": {
-                "encodedPolyline": "eiqdIntee@_@~CY~A"
+                "encodedPolyline": "gtqdIf_fe@cAzA"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.3417877,
-                  "longitude": -6.2600834999999995
+                  "latitude": 53.3435583,
+                  "longitude": -6.2617959
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.342080499999994,
-                  "longitude": -6.2613598999999995
+                  "latitude": 53.3439044,
+                  "longitude": -6.2622635
                 }
               },
               "navigationInstruction": {
                 "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Johnson's Ct"
+                "instructions": "Turn left onto Trinity St"
               },
               "localizedValues": {
                 "distance": {
-                  "text": "91 m"
+                  "text": "55 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 87,
+              "staticDuration": "70s",
+              "polyline": {
+                "encodedPolyline": "kvqdIbbfe@F`G"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3439044,
+                  "longitude": -6.2622635
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.343857,
+                  "longitude": -6.2635475
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Dame Ln\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "87 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.6 km"
+            },
+            "duration": {
+              "text": "8 mins"
+            },
+            "staticDuration": {
+              "text": "8 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 345,
+          "duration": "284s",
+          "staticDuration": "284s",
+          "polyline": {
+            "encodedPolyline": "cvqdIdjfe@@ZGJk@D@pBB??^C??jGCh@FfC?p@Bj@S`@FpAYJ"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.343857,
+              "longitude": -6.2635475
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3442546,
+              "longitude": -6.267852100000001
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 13,
+              "staticDuration": "11s",
+              "polyline": {
+                "encodedPolyline": "cvqdIdjfe@@ZGJ"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.343857,
+                  "longitude": -6.2635475
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.34389170000001,
+                  "longitude": -6.263752800000001
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Dame Ln toward Dame Ct"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 36,
+              "staticDuration": "27s",
+              "polyline": {
+                "encodedPolyline": "ivqdIlkfe@k@D"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.34389170000001,
+                  "longitude": -6.263752800000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3441141,
+                  "longitude": -6.2637787
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right toward Dame St/R137"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "36 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 268,
+              "staticDuration": "226s",
+              "polyline": {
+                "encodedPolyline": "uwqdIrkfe@@pBB??^C??jGCh@FfC?p@Bj@S`@FpA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3441141,
+                  "longitude": -6.2637787
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3441154,
+                  "longitude": -6.2677874000000005
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Dame St/R137\nContinue to follow R137"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 28,
+              "staticDuration": "20s",
+              "polyline": {
+                "encodedPolyline": "wwqdItdge@YJ"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3441154,
+                  "longitude": -6.2677874000000005
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3442546,
+                  "longitude": -6.267852100000001
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Exchange Street Upper\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "28 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.3 km"
+            },
+            "duration": {
+              "text": "5 mins"
+            },
+            "staticDuration": {
+              "text": "5 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 570,
+          "duration": "455s",
+          "staticDuration": "455s",
+          "polyline": {
+            "encodedPolyline": "yxqdIpege@?DmAf@Q@MWGGScAE_@y@TCg@ODM_BMeAi@_HI]Cs@g@_G]gDo@wE"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.3442947,
+              "longitude": -6.267928100000001
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.346413999999996,
+              "longitude": -6.2615691
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 54,
+              "staticDuration": "38s",
+              "polyline": {
+                "encodedPolyline": "yxqdIpege@?DmAf@Q@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3442947,
+                  "longitude": -6.267928100000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.344772299999995,
+                  "longitude": -6.268167999999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head north on Exchange Street Upper toward Essex St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "54 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 49,
+              "staticDuration": "39s",
+              "polyline": {
+                "encodedPolyline": "y{qdI`gge@MWGGScAE_@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.344772299999995,
+                  "longitude": -6.268167999999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.345006899999994,
+                  "longitude": -6.2675123
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Essex Gate"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "49 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 44,
+              "staticDuration": "36s",
+              "polyline": {
+                "encodedPolyline": "i}qdI|bge@y@TCg@OD"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.345006899999994,
+                  "longitude": -6.2675123
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.345405,
+                  "longitude": -6.2674467
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Parliament St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "44 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 423,
+              "staticDuration": "342s",
+              "polyline": {
+                "encodedPolyline": "w_rdIpbge@M_BMeAi@_HI]Cs@g@_G]gDo@wE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.345405,
+                  "longitude": -6.2674467
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.346413999999996,
+                  "longitude": -6.2615691
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Wellington Quay/R148\nContinue to follow R148"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.4 km"
+                },
+                "staticDuration": {
+                  "text": "6 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.6 km"
+            },
+            "duration": {
+              "text": "8 mins"
+            },
+            "staticDuration": {
+              "text": "8 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 425,
+          "duration": "372s",
+          "staticDuration": "372s",
+          "polyline": {
+            "encodedPolyline": "kerdIh}ee@PjAC?XzBB?@LC?NbAC@OJoAn@I@?@SJAIaBb@O?_Cj@IE@`@KFNpAZtD"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.346303299999995,
+              "longitude": -6.2614886
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3477609,
+              "longitude": -6.2651363
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 100,
+              "staticDuration": "84s",
+              "polyline": {
+                "encodedPolyline": "kerdIh}ee@PjAC?XzBB?@LC?NbAC@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.346303299999995,
+                  "longitude": -6.2614886
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3460349,
+                  "longitude": -6.2629142
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Aston Quay/R148 toward Bedford Row\nContinue to follow R148"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
                 },
                 "staticDuration": {
                   "text": "1 min"
@@ -1400,21 +791,25 @@
             },
             {
               "distanceMeters": 64,
-              "staticDuration": "57s",
+              "staticDuration": "65s",
               "polyline": {
-                "encodedPolyline": "_kqdIn|ee@Y~BDn@?H"
+                "encodedPolyline": "ucrdIdffe@OJoAn@I@?@SJ"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.342080499999994,
-                  "longitude": -6.2613598999999995
+                  "latitude": 53.3460349,
+                  "longitude": -6.2629142
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.342184499999995,
-                  "longitude": -6.2622873
+                  "latitude": 53.3466598,
+                  "longitude": -6.263294699999999
                 }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Ha'penny Bridge\nTake the stairs"
               },
               "localizedValues": {
                 "distance": {
@@ -1428,21 +823,25 @@
             },
             {
               "distanceMeters": 3,
-              "staticDuration": "3s",
+              "staticDuration": "12s",
               "polyline": {
-                "encodedPolyline": "skqdIhbfe@AD"
+                "encodedPolyline": "sgrdIphfe@"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.342184499999995,
-                  "longitude": -6.2622873
+                  "latitude": 53.3466598,
+                  "longitude": -6.263294699999999
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.3421928,
-                  "longitude": -6.2623226999999995
+                  "latitude": 53.3466598,
+                  "longitude": -6.263294699999999
                 }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Ormond Quay Lower/R148"
               },
               "localizedValues": {
                 "distance": {
@@ -1455,246 +854,26 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 4,
-              "staticDuration": "3s",
+              "distanceMeters": 149,
+              "staticDuration": "123s",
               "polyline": {
-                "encodedPolyline": "ukqdInbfe@AJ"
+                "encodedPolyline": "sgrdIphfe@AIaBb@O?_Cj@IE"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.3421928,
-                  "longitude": -6.2623226999999995
+                  "latitude": 53.3466598,
+                  "longitude": -6.263294699999999
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.3422014,
-                  "longitude": -6.2623767
-                }
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "4 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 9,
-              "staticDuration": "7s",
-              "polyline": {
-                "encodedPolyline": "wkqdIzbfe@CL"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3422014,
-                  "longitude": -6.2623767
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3422183,
-                  "longitude": -6.2624523
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "DEPART",
-                "instructions": "Head west toward William St S"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "9 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 7,
-              "staticDuration": "6s",
-              "polyline": {
-                "encodedPolyline": "{kqdIhcfe@KE"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3422183,
-                  "longitude": -6.2624523
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.342281,
-                  "longitude": -6.2624179
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto William St S"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "7 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 54,
-              "staticDuration": "44s",
-              "polyline": {
-                "encodedPolyline": "glqdIbcfe@e@`D"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.342281,
-                  "longitude": -6.2624179
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3424663,
-                  "longitude": -6.263227199999999
+                  "latitude": 53.347925399999994,
+                  "longitude": -6.263613299999999
                 }
               },
               "navigationInstruction": {
                 "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Castle Market"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "54 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 85,
-              "staticDuration": "70s",
-              "polyline": {
-                "encodedPolyline": "mmqdIdhfe@Kr@WnD"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3424663,
-                  "longitude": -6.263227199999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3426456,
-                  "longitude": -6.2643656
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto George's Street Arcade"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "85 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 170,
-              "staticDuration": "129s",
-              "polyline": {
-                "encodedPolyline": "qnqdIhofe@WSi@CMLa@?a@E}AHk@@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3426456,
-                  "longitude": -6.2643656
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344082199999995,
-                  "longitude": -6.2643454
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto South Great George's Street/R114"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "2 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 184,
-              "staticDuration": "150s",
-              "polyline": {
-                "encodedPolyline": "owqdIdofe@?^C??jGCh@FfC?p@Bj@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344082199999995,
-                  "longitude": -6.2643454
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Dame St/R137"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "0.2 km"
-                },
-                "staticDuration": {
-                  "text": "3 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 140,
-              "staticDuration": "111s",
-              "polyline": {
-                "encodedPolyline": "kwqdI`age@aE|@u@RCg@OD@T"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344062199999996,
-                  "longitude": -6.2672066
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3453897,
-                  "longitude": -6.2675563
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Parliament St"
+                "instructions": "Turn left onto Liffey St. Lower"
               },
               "localizedValues": {
                 "distance": {
@@ -1707,30 +886,30 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 83,
-              "staticDuration": "73s",
+              "distanceMeters": 22,
+              "staticDuration": "20s",
               "polyline": {
-                "encodedPolyline": "u_rdIfcge@cB`@QN"
+                "encodedPolyline": "qordIpjfe@@`@KF"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.3453897,
-                  "longitude": -6.2675563
+                  "latitude": 53.347925399999994,
+                  "longitude": -6.263613299999999
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.345975100000004,
-                  "longitude": -6.2678050999999995
+                  "latitude": 53.347978399999995,
+                  "longitude": -6.2638169999999995
                 }
               },
               "navigationInstruction": {
-                "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto Grattan Bridge"
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Liffey St. Upper"
               },
               "localizedValues": {
                 "distance": {
-                  "text": "83 m"
+                  "text": "22 m"
                 },
                 "staticDuration": {
                   "text": "1 min"
@@ -1739,62 +918,30 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 272,
-              "staticDuration": "233s",
+              "distanceMeters": 87,
+              "staticDuration": "68s",
               "polyline": {
-                "encodedPolyline": "kcrdIxdge@_@@@XmAVAK}C~@B\\I[_FnA"
+                "encodedPolyline": "{ordIzkfe@NpAZtD"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.345975100000004,
-                  "longitude": -6.2678050999999995
+                  "latitude": 53.347978399999995,
+                  "longitude": -6.2638169999999995
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.3484666,
-                  "longitude": -6.2687446
+                  "latitude": 53.3477609,
+                  "longitude": -6.2651363
                 }
               },
               "navigationInstruction": {
                 "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto Capel St"
+                "instructions": "Continue onto Abbey Street Upper\nDestination will be on the right"
               },
               "localizedValues": {
                 "distance": {
-                  "text": "0.3 km"
-                },
-                "staticDuration": {
-                  "text": "4 mins"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 32,
-              "staticDuration": "25s",
-              "polyline": {
-                "encodedPolyline": "}rrdIrjge@K{A"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3484666,
-                  "longitude": -6.2687446
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3485323,
-                  "longitude": -6.2682797
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Mary St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "32 m"
+                  "text": "87 m"
                 },
                 "staticDuration": {
                   "text": "1 min"
@@ -1805,22 +952,151 @@
           ],
           "localizedValues": {
             "distance": {
-              "text": "1.3 km"
+              "text": "0.4 km"
             },
             "duration": {
-              "text": "18 mins"
+              "text": "6 mins"
             },
             "staticDuration": {
-              "text": "18 mins"
+              "text": "6 mins"
             }
           }
         },
         {
-          "distanceMeters": 534,
-          "duration": "463s",
-          "staticDuration": "463s",
+          "distanceMeters": 323,
+          "duration": "268s",
+          "staticDuration": "268s",
           "polyline": {
-            "encodedPolyline": "isrdIvgge@JzA~EoAHZC]|C_AAMrAWZAPObBa@AUNEBf@hA]Jz@\\|@d@Ol@W"
+            "encodedPolyline": "onrdIbtfe@^bFiFtAP`CID@JHCZhD"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 53.3477609,
+              "longitude": -6.2651363
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 53.3485323,
+              "longitude": -6.2682797
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 73,
+              "staticDuration": "58s",
+              "polyline": {
+                "encodedPolyline": "onrdIbtfe@^bF"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3477609,
+                  "longitude": -6.2651363
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3476004,
+                  "longitude": -6.2662767
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Abbey Street Upper toward Millennium Walkway"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "73 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 138,
+              "staticDuration": "115s",
+              "polyline": {
+                "encodedPolyline": "omrdIf{fe@iFtA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3476004,
+                  "longitude": -6.2662767
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.348772999999994,
+                  "longitude": -6.2667133999999995
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Jervis St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 112,
+              "staticDuration": "95s",
+              "polyline": {
+                "encodedPolyline": "ytrdI|}fe@P`CID@JHCZhD"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.348772999999994,
+                  "longitude": -6.2667133999999995
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.3485323,
+                  "longitude": -6.2682797
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Mary St\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "0.3 km"
+            },
+            "duration": {
+              "text": "4 mins"
+            },
+            "staticDuration": {
+              "text": "4 mins"
+            }
+          }
+        },
+        {
+          "distanceMeters": 1026,
+          "duration": "876s",
+          "staticDuration": "876s",
+          "polyline": {
+            "encodedPolyline": "isrdIvgge@JzAkErAa@FcBf@o@|@c@\\e@La@DINx@pAVl@h@|BXfB\\|DHzBETF`@?n@Cn@Bt@B@A|@GAFx@VxBRfFBNLpC@@BTCADhBMdDEn@SGBg@"
           },
           "startLocation": {
             "latLng": {
@@ -1830,8 +1106,8 @@
           },
           "endLocation": {
             "latLng": {
-              "latitude": 53.3443043,
-              "longitude": -6.26788
+              "latitude": 53.349847499999996,
+              "longitude": -6.279083099999999
             }
           },
           "steps": [
@@ -1868,10 +1144,10 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 272,
-              "staticDuration": "222s",
+              "distanceMeters": 307,
+              "staticDuration": "254s",
               "polyline": {
-                "encodedPolyline": "}rrdIrjge@~EoAHZC]|C_AAMrAWZA"
+                "encodedPolyline": "}rrdIrjge@kErAa@FcBf@o@|@c@\\e@La@DIN"
               },
               "startLocation": {
                 "latLng": {
@@ -1881,13 +1157,13 @@
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.345975100000004,
-                  "longitude": -6.2678050999999995
+                  "latitude": 53.350986299999995,
+                  "longitude": -6.2700416
                 }
               },
               "navigationInstruction": {
-                "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Capel St"
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Capel St"
               },
               "localizedValues": {
                 "distance": {
@@ -1900,126 +1176,58 @@
               "travelMode": "WALK"
             },
             {
-              "distanceMeters": 83,
-              "staticDuration": "80s",
+              "distanceMeters": 662,
+              "staticDuration": "566s",
               "polyline": {
-                "encodedPolyline": "kcrdIxdge@PObBa@AU"
+                "encodedPolyline": "ubsdIvrge@x@pAVl@h@|BXfB\\|DHzBETF`@?n@Cn@Bt@B@A|@GAFx@VxBRfFBNLpC@@BTCADhBMdDEn@"
               },
               "startLocation": {
                 "latLng": {
-                  "latitude": 53.345975100000004,
-                  "longitude": -6.2678050999999995
+                  "latitude": 53.350986299999995,
+                  "longitude": -6.2700416
                 }
               },
               "endLocation": {
                 "latLng": {
-                  "latitude": 53.345405,
-                  "longitude": -6.2674467
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto Grattan Bridge"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "83 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 44,
-              "staticDuration": "44s",
-              "polyline": {
-                "encodedPolyline": "w_rdIpbge@NEBf@hA]"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.345405,
-                  "longitude": -6.2674467
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.344929699999994,
-                  "longitude": -6.2674724
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "NAME_CHANGE",
-                "instructions": "Continue onto Parliament St"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "44 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 49,
-              "staticDuration": "42s",
-              "polyline": {
-                "encodedPolyline": "y|qdItbge@Jz@\\|@"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.344929699999994,
-                  "longitude": -6.2674724
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3447175,
-                  "longitude": -6.268076799999999
-                }
-              },
-              "navigationInstruction": {
-                "maneuver": "TURN_RIGHT",
-                "instructions": "Turn right onto Essex Gate"
-              },
-              "localizedValues": {
-                "distance": {
-                  "text": "49 m"
-                },
-                "staticDuration": {
-                  "text": "1 min"
-                }
-              },
-              "travelMode": "WALK"
-            },
-            {
-              "distanceMeters": 54,
-              "staticDuration": "49s",
-              "polyline": {
-                "encodedPolyline": "o{qdInfge@d@Ol@W"
-              },
-              "startLocation": {
-                "latLng": {
-                  "latitude": 53.3447175,
-                  "longitude": -6.268076799999999
-                }
-              },
-              "endLocation": {
-                "latLng": {
-                  "latitude": 53.3443043,
-                  "longitude": -6.26788
+                  "latitude": 53.3497687,
+                  "longitude": -6.279317799999999
                 }
               },
               "navigationInstruction": {
                 "maneuver": "TURN_LEFT",
-                "instructions": "Turn left onto Exchange Street Upper"
+                "instructions": "Turn left onto Bolton St/R132/R804\nContinue to follow R804"
               },
               "localizedValues": {
                 "distance": {
-                  "text": "54 m"
+                  "text": "0.7 km"
+                },
+                "staticDuration": {
+                  "text": "9 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 25,
+              "staticDuration": "30s",
+              "polyline": {
+                "encodedPolyline": "a{rdIvlie@SGBg@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 53.3497687,
+                  "longitude": -6.279317799999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 53.349847499999996,
+                  "longitude": -6.279083099999999
+                }
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "25 m"
                 },
                 "staticDuration": {
                   "text": "1 min"
@@ -2030,19 +1238,19 @@
           ],
           "localizedValues": {
             "distance": {
-              "text": "0.5 km"
+              "text": "1.0 km"
             },
             "duration": {
-              "text": "8 mins"
+              "text": "15 mins"
             },
             "staticDuration": {
-              "text": "8 mins"
+              "text": "15 mins"
             }
           }
         }
       ],
       "polyline": {
-        "encodedPolyline": "kerdIh}ee@PjAC?XzBB?@LC?b@rD~@GdCIHQnCEBNDjE`BE}AD?^C??jGCh@FfC?p@Bj@aE|@u@RPnFFj@RdE^jJ?V]??F{ANA`A?hAC|AOxDU~ECh@FDEl@AFWIOhCgAvJCZOxAGCAV@?g@jEAd@iAWi@OcC_@_HgAWOq@AKE@OSGBg@Cf@D@LDANXDb@@`@PfHhAzB^hBb@@e@f@kEA?@WFBNyAB[fAwJNqCGCHi@DB@ELDReFLsBFiBDkCAw@@e@zAOUyIOuC]_LNEBf@lBi@hCg@C}@AaAAiAC[Bi@?kGB??_@C?AqBj@EFKA[@ZxCKAyCNB~ErCDIr@b@NBv@d@R{@R[l@i@^BVNv@gHLDP?RiADy@A_AIe@OOoARo@McAc@[SPyCQxCqBkA_@~CY~AY~BDn@?HADAJCLKEe@`DKr@WnDWSi@CMLa@?a@E}AHk@@?^C??jGCh@FfC?p@Bj@aE|@u@RCg@OD@TcB`@QN_@@@XmAVAK}C~@B\\I[_FnAK{AJzA~EoAHZC]|C_AAMrAWZAPObBa@AUNEBf@hA]Jz@\\|@d@Ol@W"
+        "encodedPolyline": "c_qdIf`fe@P?RiADy@A_AIe@OOoARo@McAc@[SPyCQxCuF_Dc@Qi@dEI@]`BEl@GzCqAm@GGcAzAF`G@ZGJk@D@pBB??^C??jGCh@FfC?p@Bj@S`@FpAYJGN?DmAf@Q@MWGGScAE_@y@TCg@ODM_BMeAi@_HI]Cs@g@_G]gDo@wETOPjAC?XzBB?@LC?NbAC@OJoAn@I@?@SJAIaBb@O?_Cj@IE@`@KFNpAZtD^bFiFtAP`CID@JHCZhDJzAkErAa@FcBf@o@|@c@\\e@La@DINx@pAVl@h@|BXfB\\|DHzBETF`@?n@Cn@Bt@B@A|@GAFx@VxBRfFBNLpC@@BTCADhBMdDEn@SGBg@"
       }
     }
   ]
