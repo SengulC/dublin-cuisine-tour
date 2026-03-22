@@ -1,6 +1,7 @@
 // initializing and fetching necessary data from json files
 const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
-const tour = "experience"; // "budget"; 
+let script = document.getElementById("module-script").dataset.json 
+let tour = JSON.parse(script).tour;
 const coordsJson = await fetch(`${base}/map-creator/data/${tour}-coords.json`); 
 const coordsData = await coordsJson.json();
 const routeJson = await fetch(`${base}/map-creator/data/${tour}-route.json`); 
