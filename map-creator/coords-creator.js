@@ -3,13 +3,15 @@
 import fs from 'fs';
 import 'dotenv/config';
 const API_KEY = process.env.local_dev_key;
+const tour = "experience"; //"budget"
 
-const restData = JSON.parse(fs.readFileSync("./data/coords.json", "utf-8"));
+const restData = JSON.parse(fs.readFileSync(`./data/${tour}-coords.json`, "utf-8"));
 let eircodes = [];
 restData.filter((entry) => {eircodes.push(entry.eircode)});
 
 async function geocodeEircode(eircode) {
-  const response = await fetch(
+  const response = await fetch
+  (
     `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(eircode)}&region=ie&key=${API_KEY}`
   );
   const data = await response.json();
@@ -31,8 +33,8 @@ async function main() {
     results.push(restaurant)
   }
 
-  fs.writeFileSync("./data/coords.json", JSON.stringify(results, null, 2));
-  console.log(`Saved ${results.length} restaurant(s) data to ./data/coords.json`);
+  fs.writeFileSync(`./data/${tour}-coords.json`, JSON.stringify(results, null, 2));
+  console.log(`Saved ${results.length} restaurant(s) data to ./data/${tour}-coords.json`);
 }
 
 main();

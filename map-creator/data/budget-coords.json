@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Ruby Tuesday's Soul Food",
+    "desc": "Afro-Caribbean Restaurant.",
+    "dish": "A dish.",
+    "eircode": "D02 PC04",
+    "lat": 53.3399662,
+    "lng": -6.262006599999999
+  },
+  {
+    "name": "Xian Street Food",
+    "desc": "Chinese Restaurant.",
+    "dish": "",
+    "eircode": "D02 DX39",
+    "lat": 53.341033,
+    "lng": -6.259719
+  },
+  {
+    "name": "The Stag's Head",
+    "desc": "Irish Pub.",
+    "dish": "A dish.",
+    "eircode": "D02 TW84",
+    "lat": 53.34381279999999,
+    "lng": -6.2635429
+  },
+  {
+    "name": "Sano Pizza",
+    "desc": "Italian Restaurant",
+    "dish": "",
+    "eircode": "D08 XW7D",
+    "lat": 53.3442979,
+    "lng": -6.267805999999999
+  },
+  {
+    "name": "Tucano",
+    "desc": "Brazilian restaurant.",
+    "dish": "A dish.",
+    "eircode": "D02 K504",
+    "lat": 53.34627099999999,
+    "lng": -6.2614054
+  },
+  {
+    "name": "El Grito",
+    "desc": "Mexican restaurant.",
+    "dish": "A dish.",
+    "eircode": "D01 W3X5",
+    "lat": 53.34781280000001,
+    "lng": -6.265159199999999
+  },
+  {
+    "name": "Umi Falafel",
+    "desc": "Middle Eastern Restaurant",
+    "dish": "",
+    "eircode": "D01 T0C3",
+    "lat": 53.3484682,
+    "lng": -6.2681739
+  },
+  {
+    "name": "Namaste India",
+    "desc": "Indian restaurant.",
+    "dish": "A dish.",
+    "eircode": "D07 KFH5",
+    "lat": 53.34985229999999,
+    "lng": -6.279081199999999
+  }
+]
