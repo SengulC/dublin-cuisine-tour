@@ -44,7 +44,6 @@ async function addMarker(map, lat, lng, title, link) {
         infoWindow.close();
         const div = document.createElement("div");
         div.className = "map-marker-popup";
-        console.log(link);
         div.innerHTML = `Directions: <a href=${link}>${title}</a>`;
         infoWindow.setContent(div);
         infoWindow.open(marker.map, marker);
@@ -114,23 +113,6 @@ initMap();
 initRoute();
 initWalkingStops();
 
-// ------------- WIP: UPDATING USER'S LIVE LOCATION 
-
-// helper function to get user's current position 
-// async function getUserLocation() {
-//     return new Promise((resolve, reject) => {
-//     if (!navigator.geolocation) {
-//         reject(new Error("Geolocation not supported"));
-//         return;
-//     }
-//     navigator.geolocation.getCurrentPosition(
-//         (position) => resolve({lat: position.coords.latitude, lng: position.coords.longitude}),
-//         (error) => reject(error),
-//         options
-//     );
-//     });
-// }
-
 // helper function to find nearest restaurant in route to user's current location
 // using the userLocationPromise we launched from the initial call to this script
 async function findNearestStop(userPos) {
@@ -186,3 +168,18 @@ function error(err) {
 }
 
 navigator.geolocation.watchPosition(success, error, options);
+
+// helper function to get user's current position 
+// async function getUserLocation() {
+//     return new Promise((resolve, reject) => {
+//     if (!navigator.geolocation) {
+//         reject(new Error("Geolocation not supported"));
+//         return;
+//     }
+//     navigator.geolocation.getCurrentPosition(
+//         (position) => resolve({lat: position.coords.latitude, lng: position.coords.longitude}),
+//         (error) => reject(error),
+//         options
+//     );
+//     });
+// }
