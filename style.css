@@ -45,7 +45,7 @@ nav {
 .page-navigation a {
   color: var(--white);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   padding: 8px 16px;
@@ -58,12 +58,11 @@ nav {
 }
 
 #landing {
-  padding: 80px 24px 60px;
+  padding: 80px 80px 60px;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -79,25 +78,27 @@ nav {
 }
 
 /* Ensure all direct children of #landing sit above the background */
-#landing > *:not(.landing-bg) {
+#landing>*:not(.landing-bg) {
   position: relative;
   z-index: 1;
 }
 
 #landing h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 64px;
+  font-size: 3rem;
   line-height: 0.95;
   color: var(--gold);
   letter-spacing: 2px;
+  text-align: center;
 }
 
 #landing .tour-tagline {
   margin-top: 16px;
-  font-size: 13px;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--muted);
+  text-align: center;
 }
 
 .tour-entry-actions {
@@ -106,6 +107,7 @@ nav {
   flex-direction: column;
   gap: 12px;
   max-width: 220px;
+  align-self: center;
 }
 
 .action-discover,
@@ -113,7 +115,7 @@ nav {
   display: block;
   text-align: center;
   padding: 13px 24px;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -140,7 +142,7 @@ section {
 }
 
 .neighbourhood-eyebrow {
-  font-size: 11px;
+  font-size: 1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
@@ -149,13 +151,13 @@ section {
 
 section h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
   letter-spacing: 1px;
   margin-bottom: 16px;
 }
 
 .tour-description {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #aaa;
 }
@@ -178,7 +180,7 @@ section h2 {
 }
 
 .route-index {
-  font-size: 10px;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gold);
@@ -187,7 +189,7 @@ section h2 {
 
 .walking-route h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 26px;
+  font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
@@ -195,7 +197,7 @@ section h2 {
 .route-details {
   display: flex;
   gap: 14px;
-  font-size: 12px;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -217,13 +219,13 @@ section h2 {
 
 .fact-figure {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 40px;
+  font-size: 2rem;
   color: var(--gold);
   line-height: 1;
 }
 
 .fact-name {
-  font-size: 11px;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--muted);
@@ -239,7 +241,7 @@ footer {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 1rem;
   color: #444;
   letter-spacing: 1px;
 }
@@ -258,6 +260,7 @@ footer p {
 .walking-stop {
   border: 1px solid #222;
   padding: 20px;
+  position: relative;
 }
 
 .walking-stop:hover {
@@ -265,8 +268,87 @@ footer p {
   background: #111;
 }
 
+/* Background Darkener Overlay */
+.walking-stop::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.walking-stop:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Centered Hover Modal */
+.restaurant-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 90%;
+  max-width: 340px;
+  background: #0a0a0a;
+  border: 1px solid var(--gold);
+  border-top: 4px solid var(--gold);
+  padding: 32px 24px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.95);
+  border-radius: 8px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.walking-stop:hover .restaurant-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.restaurant-popup h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: var(--white);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 16px;
+  font-weight: normal;
+}
+
+.restaurant-popup p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.restaurant-popup p:last-child {
+  margin-bottom: 0px;
+}
+
+.restaurant-popup strong {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
 .stop-index {
-  font-size: 10px;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gold);
@@ -275,7 +357,7 @@ footer p {
 
 .walking-stop h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 26px;
+  font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
@@ -283,7 +365,7 @@ footer p {
 .stop-details {
   display: flex;
   gap: 14px;
-  font-size: 12px;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -303,7 +385,7 @@ a.walking-route {
 
 .hero h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 56px;
+  font-size: 3rem;
   color: var(--gold);
   line-height: 1;
   margin-bottom: 16px;
@@ -312,7 +394,7 @@ a.walking-route {
 
 .hero p {
   color: #aaa;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.6;
   max-width: 90%;
   margin: 0 auto;
@@ -328,7 +410,7 @@ a.walking-route {
 }
 
 .missionbox h2 {
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 .statswrapper {
@@ -351,7 +433,7 @@ a.walking-route {
 }
 
 .factbox .fact-figure {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 4px;
 }
 
@@ -380,18 +462,88 @@ a.walking-route {
   height: 4px;
   background: var(--gold);
 }
-.about-image {
+
+/* .about-image {
   width: 100%;
   height: auto;
   margin-top: 24px;
   display: block;
-}
+} */
 
 /* MAP STUFF */
 /* route.html: map height */
-#map { height: 540px; }
+#map {
+  height: 540px;
+}
 
 .map-marker-popup {
   text-align: center;
   color: black;
+}
+
+
+/* Index button hover styles */
+.action-discover:hover {
+  border-color: var(--black);
+  cursor: pointer;
+}
+
+.action-about:hover {
+  border-color: var(--gold);
+  cursor: pointer;
+}
+
+/* discover.html image carousels style */
+.carousel {
+  margin-top: 16px;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 8px;
+  letter-spacing: 1px;
+}
+
+.carousel-credit {
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  font-size: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 6px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.carousel-dots span {
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots span.active {
+  background: var(--gold);
 }

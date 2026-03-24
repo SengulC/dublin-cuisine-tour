@@ -1,12 +1,11 @@
 // GEN. ROUTE FORM LONG/LAT PAIRS 
 
 import fs from 'fs';
-import dotenv from 'dotenv';
-dotenv.config();
-
+import 'dotenv/config';
 const API_KEY = process.env.local_dev_key;
+const tour = "experience"; //"budget"
 
-const restData = JSON.parse(fs.readFileSync("./data/coords.json", "utf-8"));
+const restData = JSON.parse(fs.readFileSync(`./data/${tour}-coords.json`, "utf-8"));
 
 function toLatLng(coord) {
   // convert lat lang data to google-interpretable object
@@ -42,7 +41,7 @@ async function computeRoute() {
     throw new Error(`Routes API error: ${JSON.stringify(data.error)}`);
   }
 
-  fs.writeFileSync("./data/route.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync(`./data/${tour}-route.json`, JSON.stringify(data, null, 2));
   console.log(`Route saved with ${2 + intermediates.length} stops`);
 }
 

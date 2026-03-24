@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The Budget Trail: a walking route through Dublin's north and southside taking in 8 restaurants from Palestinian Falafels to Indian Street Food.">
+  <link rel="icon" type="image/x-icon" href="./images/Logo_Gold.png">
+  <title>The Budget Trail · Dublin Cuisine Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // lazy loading
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.googleapis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+      ({ key: "AIzaSyDSfohvEvPCr_MFuSF-_I3XTJO1MLW_c9M", v: "weekly" });
+    // 'AIzaSyDSfohvEvPCr_MFuSF-_I3XTJO1MLW_c9M' can be shared bc ive restricted it
+  </script>
+  <script type="module" data-json='{"tour": "budget"}' id="module-script" src="./map-creator/route.js"></script>
+</head>
+
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="site-logo">
+      <img src="images/Logo_Gold.png" alt="Dublin Cuisine Tour logo">
+    </a>
+    <div class="page-navigation">
+      <a href="discover.html">Routes</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="route">
+      <p class="neighbourhood-eyebrow">Route 01 · North/South · Budget</p>
+      <h2>The Budget Trail</h2>
+      <p class="tour-description">Insert budget description here.</p>
+
+      <br>
+      <div id="map" role="application"
+        aria-label="Interactive map showing the Budget Trail walking route and restaurant stops"></div>
+
+      <div id="walking-stops">
+        <div class="walking-stop">
+          <p class="stop-index">Stop 01</p>
+          <h3>Ruby Tuesday's Soul Food</h3>
+          <div class="stop-details">
+            <span>A dish.</span>
+            <span>Afro-Caribbean Restaurant.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Ruby Tuesday's Soul Food</h4>
+            <p><strong>Popular Dish:</strong> A dish.</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 02</p>
+          <h3>Xian Street Food</h3>
+          <div class="stop-details">
+            <span>Signature Dish</span>
+            <span>Chinese Restaurant.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Xian Street Food</h4>
+            <p><strong>Popular Dish:</strong> Signature Dish</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 03</p>
+          <h3>The Stag's Head</h3>
+          <div class="stop-details">
+            <span>A dish.</span>
+            <span>Irish Pub.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>The Stag's Head</h4>
+            <p><strong>Popular Dish:</strong> A dish.</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 04</p>
+          <h3>Sano Pizza</h3>
+          <div class="stop-details">
+            <span>Signature Dish</span>
+            <span>Italian Restaurant</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Sano Pizza</h4>
+            <p><strong>Popular Dish:</strong> Signature Dish</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 05</p>
+          <h3>Tucano</h3>
+          <div class="stop-details">
+            <span>A dish.</span>
+            <span>Brazilian restaurant.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Tucano</h4>
+            <p><strong>Popular Dish:</strong> A dish.</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 06</p>
+          <h3>El Grito</h3>
+          <div class="stop-details">
+            <span>A dish.</span>
+            <span>Mexican restaurant.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>El Grito</h4>
+            <p><strong>Popular Dish:</strong> A dish.</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 07</p>
+          <h3>Umi Falafel</h3>
+          <div class="stop-details">
+            <span>Signature Dish</span>
+            <span>Middle Eastern Restaurant</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Umi Falafel</h4>
+            <p><strong>Popular Dish:</strong> Signature Dish</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="walking-stop">
+          <p class="stop-index">Stop 08</p>
+          <h3>Namaste India</h3>
+          <div class="stop-details">
+            <span>A dish.</span>
+            <span>Indian restaurant.</span>
+          </div>
+          <div class="restaurant-popup">
+            <h4>Namaste India</h4>
+            <p><strong>Popular Dish:</strong> A dish.</p>
+            <p><strong>Amenities:</strong> WiFi, Outdoor Seating</p>
+            <p><strong>Hours:</strong> 12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+        <!--
+        Each stop lists a restaurant name, its cuisine, and the
+        recommended dish. These are the three things a visitor
+        needs to know before they arrive at each door.
+      -->
+
+        <!-- Generated via route.js script -->
+        <!-- EXAMPLE TEMPLATE IF YOU WANT TO EDIT THE CSS: -->
+        <!-- <div class="walking-stop">
+      <p class="stop-index">Stop 01</p>
+      <h3>Restaurant Name</h3>
+      <div class="stop-details">
+        <span>Cuisine</span>
+        <span>Recommended dish</span>
+      </div>
+    </div> -->
+      </div>
+
+      <a href="discover.html" class="action-about" style="display:inline-block; margin-top: 32px;">← Back to Routes</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dublin Cuisine Tour · Dublin, Ireland</p>
+    <p>2025 · All rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
