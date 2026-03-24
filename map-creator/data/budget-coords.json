@@ -2,7 +2,8 @@
   {
     "name": "Ruby Tuesday's Soul Food",
     "desc": "Afro-Caribbean Restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Ruby+Tuesday's+Soul+Food/@53.3432046,-6.2643226,16z/data=!4m6!3m5!1s0x48670f74aef548ed:0xb3c099f600dec713!8m2!3d53.3396358!4d-6.261195!16s%2Fg%2F11h0m3zsfg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Jerk Chicken Wings",
     "eircode": "D02 PC04",
     "lat": 53.3399662,
     "lng": -6.262006599999999
@@ -10,14 +11,16 @@
   {
     "name": "Xian Street Food",
     "desc": "Chinese Restaurant.",
-    "dish": "",
+    "link": "https://www.google.com/maps/place/Xian+Street+Food+Dublin/@53.3410334,-6.2643275,17z/data=!3m1!4b1!4m6!3m5!1s0x48670fa345531671:0x34975bec6fa5579!8m2!3d53.3410335!4d-6.2597141!16s%2Fg%2F11h27v6fl9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Spice Bag",
     "eircode": "D02 DX39",
     "lat": 53.341033,
     "lng": -6.259719
   },
   {
     "name": "The Stag's Head",
-    "desc": "Irish Pub.",
+    "desc": "Beed & Guinness Stew",
+    "link": "https://www.google.com/maps/place/The+Stags+Head/@53.3432105,-6.2684796,15.81z/data=!4m6!3m5!1s0x48670e9ce8919bf1:0x7310209e5b553be6!8m2!3d53.3438235!4d-6.2636588!16zL20vMDVxaDM4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
     "dish": "A dish.",
     "eircode": "D02 TW84",
     "lat": 53.34381279999999,
@@ -26,7 +29,8 @@
   {
     "name": "Sano Pizza",
     "desc": "Italian Restaurant",
-    "dish": "",
+    "link": "https://www.google.com/maps/place/Sano+Pizza/@53.3442702,-6.2724205,17z/data=!3m1!4b1!4m6!3m5!1s0x48670e9d59aebabd:0x197f1470fd6dd30a!8m2!3d53.3442703!4d-6.2678071!16s%2Fg%2F11gh0kx745?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Capricciosa Pizza",
     "eircode": "D08 XW7D",
     "lat": 53.3442979,
     "lng": -6.267805999999999
@@ -34,7 +38,8 @@
   {
     "name": "Tucano",
     "desc": "Brazilian restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Tucano+Temple+Bar/@53.3462942,-6.2660211,17z/data=!3m1!4b1!4m6!3m5!1s0x48670f002c8f77d9:0xb4144759ed8957f8!8m2!3d53.3462943!4d-6.2614077!16s%2Fg%2F11xyys44cc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Picanha Steak",
     "eircode": "D02 K504",
     "lat": 53.34627099999999,
     "lng": -6.2614054
@@ -42,7 +47,8 @@
   {
     "name": "El Grito",
     "desc": "Mexican restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/El+Grito+Mexican+Taqueria/@53.3481769,-6.2679741,17z/data=!3m1!4b1!4m6!3m5!1s0x48670f00108def29:0x71d4233d2b8e7f77!8m2!3d53.3481769!4d-6.2653992!16s%2Fg%2F11w2rtw0dd?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Burrito",
     "eircode": "D01 W3X5",
     "lat": 53.34781280000001,
     "lng": -6.265159199999999
@@ -50,7 +56,8 @@
   {
     "name": "Umi Falafel",
     "desc": "Middle Eastern Restaurant",
-    "dish": "",
+    "link": "https://www.google.com/maps/place/Umi+Falafel+-+Mary+St.+-+Dublin+1/@53.348461,-6.2707497,17z/data=!3m1!4b1!4m6!3m5!1s0x48670fffafef3cb5:0x41601bbf340d54d1!8m2!3d53.348461!4d-6.2681748!16s%2Fg%2F11h64w9fd0?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Palestinian Falafel",
     "eircode": "D01 T0C3",
     "lat": 53.3484682,
     "lng": -6.2681739
@@ -58,7 +65,8 @@
   {
     "name": "Namaste India",
     "desc": "Indian restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Namaste+India/@53.349852,-6.2816549,17z/data=!3m1!4b1!4m6!3m5!1s0x48670c2e82bbd56f:0x6f318311c0d3776c!8m2!3d53.349852!4d-6.27908!16s%2Fg%2F11bbrk_2jy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "dish": "Chicken Biryani",
     "eircode": "D07 KFH5",
     "lat": 53.34985229999999,
     "lng": -6.279081199999999

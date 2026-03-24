@@ -2,7 +2,8 @@
   {
     "name": "The Hairy Lemon",
     "desc": "Irish Pub.",
-    "dish": "",
+    "link": "https://www.google.com/maps/place/The+Hairy+Lemon/@53.341233,-6.2637511,17z/data=!3m1!4b1!4m6!3m5!1s0x48670e9c32ff07d9:0x91d4ac39c24aaea3!8m2!3d53.341233!4d-6.2637511!16s%2Fg%2F1vyk1y9r?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Seafood Chowder",
     "eircode": "D02 NV08",
     "lat": 53.34122199999999,
     "lng": -6.263875199999999
@@ -10,7 +11,8 @@
   {
     "name": "Acapulco Mexican Restaurant",
     "desc": "Tex-Mex Restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Acapulco+Mexican+Restaurant/@53.343616,-6.2642333,17z/data=!3m1!4b1!4m6!3m5!1s0x48670cf1d0ca2821:0xb7415226f41e255d!8m2!3d53.343616!4d-6.2642333!16s%2Fg%2F1tyzydp0?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Tacos Al Pastor",
     "eircode": "D02 EV81",
     "lat": 53.3436154,
     "lng": -6.264238199999999
@@ -18,7 +20,8 @@
   {
     "name": "The Temple Bar Pub",
     "desc": "Irish Pub.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/The+Temple+Bar+Pub/@53.3454742,-6.2641937,16z/data=!3m1!4b1!4m6!3m5!1s0x48670c27f18fd947:0x102cead7d9cb3a58!8m2!3d53.3454742!4d-6.2641937!16s%2Fg%2F12135y9g?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Pint of Guinness",
     "eircode": "D02 N725",
     "lat": 53.3454743,
     "lng": -6.2641938
@@ -26,7 +29,8 @@
   {
     "name": "Andhra Bhavan",
     "desc": "Indian restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Andhra+Bhavan+(Abbey+St)/@53.3360836,-6.2938055,12.87z/data=!4m6!3m5!1s0x48670f007d6914a7:0x551c535782df158d!8m2!3d53.3478595!4d-6.2639102!16s%2Fg%2F11wh_hyy49?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Chicken Curry",
     "eircode": "D01 A489",
     "lat": 53.347714,
     "lng": -6.2639577
@@ -34,7 +38,8 @@
   {
     "name": "Kyodai Izakaya",
     "desc": "Japanese Restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/Kyodai+Izakaya/@53.34798,-6.2578952,17z/data=!3m1!4b1!4m6!3m5!1s0x48670ff519bba677:0x4553387ae3256320!8m2!3d53.34798!4d-6.2578952!16s%2Fg%2F11v03m3rz3?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Rainbow Roll",
     "eircode": "D01 V6F4",
     "lat": 53.34811620000001,
     "lng": -6.257919900000001
@@ -42,7 +47,8 @@
   {
     "name": "The Celt",
     "desc": "Irish Pub.",
-    "dish": "",
+    "link": "https://www.google.com/maps/place/The+Celt/@53.3505629,-6.2550046,17z/data=!3m2!4b1!5s0x48670e8f576f4d1d:0xf916b9d41c463caf!4m6!3m5!1s0x48670e8f583a0867:0xce9b393c16243bb8!8m2!3d53.3505629!4d-6.2550046!16s%2Fg%2F1q5bmpgdl?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Fish N Chips",
     "eircode": "D01 YK51",
     "lat": 53.35049249999999,
     "lng": -6.2550324
@@ -50,7 +56,8 @@
   {
     "name": "M&L Szechuan Chinese",
     "desc": "Chinese restaurant.",
-    "dish": "A dish.",
+    "link": "https://www.google.com/maps/place/M%26L+Szechuan+Chinese/@53.3506299,-6.2595284,16z/data=!3m1!4b1!4m6!3m5!1s0x48670e842eb27861:0xafe8831735df965a!8m2!3d53.3506299!4d-6.2595284!16s%2Fg%2F1hc4rlj4h?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D", 
+    "dish": "Mapo Tofu",
     "eircode": "D01 K8K3",
     "lat": 53.3506295,
     "lng": -6.259530799999999

@@ -28,14 +28,14 @@ window.initMap = async function () {
 }
 
 // hlper function to add markers onto global var. map
-async function addMarker(map, lat, lng, title, desc, i) {
-    const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+async function addMarker(map, lat, lng, title, link) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     const { InfoWindow } = await google.maps.importLibrary("maps");
 
     const marker = new AdvancedMarkerElement({
         map,
         position: { lat, lng },
-        title: `${i + 1}. ${title} ${desc}`,
+        title: title,
         gmpClickable: true,
     });
 
@@ -44,12 +44,11 @@ async function addMarker(map, lat, lng, title, desc, i) {
         infoWindow.close();
         const div = document.createElement("div");
         div.className = "map-marker-popup";
-        div.innerHTML = title + ": " + desc;
+        div.innerHTML = `Directions: <a href=${link}>${title}</a>`;
         infoWindow.setContent(div);
         infoWindow.open(marker.map, marker);
     });
 }
- 
 // initialize pre-defined budget/experience route
 window.initRoute = async function () {
     const { encoding } = await google.maps.importLibrary("geometry");
@@ -74,7 +73,7 @@ window.initRoute = async function () {
     map.fitBounds(bounds);
 
     // add a marker for each restaurant on path
-    coordsData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.desc, i))
+    coordsData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.link))
 }
 
 // initialize walking stops HTML for pre-defined route
@@ -113,23 +112,6 @@ window.initWalkingStops = async function () {
 initMap();
 initRoute();
 initWalkingStops();
-
-// ------------- WIP: UPDATING USER'S LIVE LOCATION 
-
-// helper function to get user's current position 
-// async function getUserLocation() {
-//     return new Promise((resolve, reject) => {
-//     if (!navigator.geolocation) {
-//         reject(new Error("Geolocation not supported"));
-//         return;
-//     }
-//     navigator.geolocation.getCurrentPosition(
-//         (position) => resolve({lat: position.coords.latitude, lng: position.coords.longitude}),
-//         (error) => reject(error),
-//         options
-//     );
-//     });
-// }
 
 // helper function to find nearest restaurant in route to user's current location
 // using the userLocationPromise we launched from the initial call to this script
@@ -186,3 +168,18 @@ function error(err) {
 }
 
 navigator.geolocation.watchPosition(success, error, options);
+
+// helper function to get user's current position 
+// async function getUserLocation() {
+//     return new Promise((resolve, reject) => {
+//     if (!navigator.geolocation) {
+//         reject(new Error("Geolocation not supported"));
+//         return;
+//     }
+//     navigator.geolocation.getCurrentPosition(
+//         (position) => resolve({lat: position.coords.latitude, lng: position.coords.longitude}),
+//         (error) => reject(error),
+//         options
+//     );
+//     });
+// }
