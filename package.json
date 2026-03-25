@@ -1,5 +1,5 @@
 {
-  "name": "authoring_dfmt",
+  "name": "dublin-cuisine-tour",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SengulC/Authoring_DFMT.git"
+    "url": "git+https://github.com/SengulC/dublin-cuisine-tour.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SengulC/Authoring_DFMT/issues"
+    "url": "https://github.com/SengulC/dublin-cuisine-tour/issues"
   },
-  "homepage": "https://github.com/SengulC/Authoring_DFMT#readme",
+  "homepage": "https://github.com/SengulC/dublin-cuisine-tour#readme",
   "dependencies": {
     "dotenv": "^17.3.1"
   }

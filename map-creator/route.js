@@ -1,4 +1,4 @@
-const base = window.location.hostname == "127.0.0.1" ? "" : "/Authoring_DFMT";
+const base = window.location.hostname == "127.0.0.1" ? "" : "/dublin-cuisine-tour";
 
 // find out if currently generating for budget or experience route html page
 let script = document.getElementById("module-script").dataset.json 
