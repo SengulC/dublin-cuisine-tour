@@ -24,6 +24,19 @@ body {
   margin: 0 auto;
 }
 
+#landing-nav {
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  width: 100%;
+  background: var(--black);
+}
+
+.landing-logo img{
+  height: 40px;
+  display: block;
+}
+
 nav {
   padding: 20px 24px;
   border-bottom: 1px solid #1a1a1a;
@@ -50,6 +63,7 @@ nav {
   text-transform: uppercase;
   padding: 8px 16px;
   border: 1px solid #444;
+  border-radius: 8px;
 }
 
 .page-navigation a:hover {
@@ -110,7 +124,20 @@ nav {
   align-self: center;
 }
 
-.action-discover,
+.action-discover {
+  display: block;
+  text-align: center;
+  padding: 13px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #555;
+  border-radius: 40px 40px 0px 0px;
+  color: var(--white);
+}
+
 .action-about {
   display: block;
   text-align: center;
@@ -121,7 +148,27 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #555;
+  border-radius: 0px 0px 40px 40px;
   color: var(--white);
+}
+
+.action-return {
+  display: block;
+  text-align: center;
+  padding: 13px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.action-return:focus, :hover {
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 /* Gold fill signals the primary action without needing a label like "recommended" */
@@ -172,6 +219,7 @@ section h2 {
 .walking-route {
   border: 1px solid #222;
   padding: 20px;
+  border-radius: 8px;
 }
 
 .walking-route:hover {
