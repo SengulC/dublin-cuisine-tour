@@ -6,4 +6,4 @@ We are working on curating walking food tours through Dublin's most vibrant neig
 
 _Created by: Sengul, Bea, Ryan, Zach, Kabir._
 
-Website available @ [github.io/dfmt](https://sengulc.github.io/dublin-cuisine-tour/)
+Website available @ [github.io/dublin-cuisine-tour](https://sengulc.github.io/dublin-cuisine-tour/)
