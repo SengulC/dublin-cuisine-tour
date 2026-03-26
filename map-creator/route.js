@@ -1,6 +1,6 @@
-const base = window.location.hostname == "127.0.0.1" ? "" : "/dublin-cuisine-tour";
-
 // find out if currently generating for budget or experience route html page
+const base = window.location.hostname == "127.0.0.1" ? "" : "/dublin-cuisine-tour"; 
+
 let script = document.getElementById("module-script").dataset.json 
 let tour = JSON.parse(script).tour;
 
@@ -13,8 +13,7 @@ const coordsData = await coordsJson.json();
 const routeJson = await fetch(`${base}/map-creator/data/${tour}-route.json`); 
 const routeData = await routeJson.json(); 
 
-// const userLocationPromise = getUserLocation();
-let map, userPath;
+let map, userPath, userMarker, userInfoWindow;
 
 // initialize the global var. map
 window.initMap = async function () {
@@ -29,14 +28,21 @@ window.initMap = async function () {
 
 // hlper function to add markers onto global var. map
 async function addMarker(map, lat, lng, title, link) {
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const { InfoWindow } = await google.maps.importLibrary("maps");
+
+    const pinBackground = new PinElement({
+        glyphColor: 'white',
+        borderColor: '#E0B916',
+        background: '#E0B916',
+    });
 
     const marker = new AdvancedMarkerElement({
         map,
         position: { lat, lng },
         title: title,
         gmpClickable: true,
+        content: pinBackground.element,
     });
 
     const infoWindow = new InfoWindow(); 
@@ -44,11 +50,48 @@ async function addMarker(map, lat, lng, title, link) {
         infoWindow.close();
         const div = document.createElement("div");
         div.className = "map-marker-popup";
-        div.innerHTML = `Directions: <a href=${link}>${title}</a>`;
+        div.innerHTML = `Directions: <a target="_blank" href=${link}>${title}</a>`;
         infoWindow.setContent(div);
         infoWindow.open(marker.map, marker);
     });
 }
+
+// updating user marker as they move, using global var.s
+async function updateUserMarker(map, lat, lng, closestRestaurant) {
+    const newPosition = { lat, lng };
+
+    if (userMarker) {
+        userMarker.position = newPosition;
+        return;
+    }
+
+    const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+    const { InfoWindow } = await google.maps.importLibrary("maps");
+
+    const pinBackground = new PinElement({
+        glyphColor: 'white',
+        borderColor: '#9999',
+        background: '#9999',
+    });
+    userMarker = new AdvancedMarkerElement({
+        map,
+        position: newPosition,
+        title: 'You are here',
+        gmpClickable: true,
+        content: pinBackground.element,
+    });
+
+    userInfoWindow = new InfoWindow();
+    userMarker.addListener('gmp-click', () => {
+        userInfoWindow.close();
+        const div = document.createElement("div");
+        div.className = "map-marker-popup";
+        div.innerHTML = `You are here. Closest restaurant: <a target="_blank" href="${closestRestaurant.link}">${closestRestaurant.name}</a>`;
+        userInfoWindow.setContent(div);
+        userInfoWindow.open(userMarker.map, userMarker);
+    });
+}
+
 // initialize pre-defined budget/experience route
 window.initRoute = async function () {
     const { encoding } = await google.maps.importLibrary("geometry");
@@ -61,7 +104,7 @@ window.initRoute = async function () {
     const _ = new google.maps.Polyline({
         path,
         geodesic: true,
-        strokeColor: "#4285F4",
+        strokeColor: "#E0B916",
         strokeOpacity: 1.0,
         strokeWeight: 4,
         map,
@@ -73,7 +116,7 @@ window.initRoute = async function () {
     map.fitBounds(bounds);
 
     // add a marker for each restaurant on path
-    coordsData.forEach((restau, i) => addMarker(map, restau.lat, restau.lng, restau.name, restau.link))
+    coordsData.forEach((restau) => addMarker(map, restau.lat, restau.lng, restau.name, restau.link))
 }
 
 // initialize walking stops HTML for pre-defined route
@@ -82,7 +125,7 @@ window.initWalkingStops = async function () {
     let i = 0;
     coordsData.forEach((restau) => {
         i++;
-        let walking_stop =  document.createElement("div");
+        let walking_stop = document.createElement("div");
         walking_stop.classList.add("walking-stop");
 
         let stop_index = document.createElement("p");
@@ -92,7 +135,7 @@ window.initWalkingStops = async function () {
         let rest_name = document.createElement("h3");
         rest_name.innerHTML = restau.name;
 
-        let stop_details =  document.createElement("div");
+        let stop_details = document.createElement("div");
         stop_details.classList.add("stop-details");
 
         let cuisine = document.createElement("span");
@@ -108,21 +151,19 @@ window.initWalkingStops = async function () {
         let pop_amenities = document.createElement("p");
         let pop_hours = document.createElement("p");
         let pop_directions = document.createElement("p");
-        pop_dish.innerHTML= `<strong>Popular Dish:</strong> ${restau.dish}.`;
+        pop_dish.innerHTML = `<strong>Popular Dish:</strong> ${restau.dish}.`;
         pop_amenities.innerHTML = `<strong>Amenities:</strong> ${restau.amenities}`;
         pop_hours.innerHTML = `<strong>Hours:</strong> ${restau.hours}`;
-        pop_directions.innerHTML = `<strong>Directions:</strong> <a href=${restau.link}>${restau.eircode} via Google Maps</a>`;
+        pop_directions.innerHTML = `<strong>Directions:</strong> <a target="_blank" href=${restau.link}>${restau.eircode} via Google Maps</a>`;
         
         pop_up.append(pop_name, pop_dish, pop_amenities, pop_hours, pop_directions);
         stop_details.append(cuisine, location);
         walking_stop.append(stop_index, rest_name, stop_details, pop_up);
-
         walking_stops.append(walking_stop);
         walking_stop.addEventListener("click", () => {
             walking_stop.classList.toggle("active");
         });
-    }
-    )    
+    });    
 }  
 
 // RENDER THE MAP, PRE-DEFINED ROUTE, AND WALKING STOPS HTML
@@ -131,21 +172,19 @@ initRoute();
 initWalkingStops();
 
 // helper function to find nearest restaurant in route to user's current location
-// using the userLocationPromise we launched from the initial call to this script
 async function findNearestStop(userPos) {
     const { spherical } = await google.maps.importLibrary("geometry");
-    // const userPos = await userLocationPromise;
 
     let nearestStop = null;
     let minDistance = Infinity;
 
-    coordsData.forEach((entry, i) => {
+    coordsData.forEach((entry) => {
         let coord = new google.maps.LatLng(entry.lat, entry.lng);
         const distance = spherical.computeDistanceBetween(userPos, coord);
         if (distance < minDistance) {
             minDistance = distance;
             nearestStop = entry;
-    }
+        }
     });
 
     return { nearestStop, userPos };
@@ -159,24 +198,25 @@ async function updateUserLocation(userPos) {
                 result.nearestStop,
                 result.userPos
             ];
-            // update path
-            if (userPath) { // if the userPath has already been defined, clear it.
+            if (userPath) {
                 userPath.setMap(null);   
             }
             userPath = new google.maps.Polyline({
-                    path: userToClosestRestaurant,
-                    geodesic: true,
-                    strokeColor: '#FF0000',
-                    strokeOpacity: 1.0,
-                    strokeWeight: 2,
+                path: userToClosestRestaurant,
+                geodesic: true,
+                strokeColor: '#999999',
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
             });
-            userPath.setMap(map); // renders userPath upon global var. map
+            // update global var.s of the user path and marker
+            userPath.setMap(map);
+            updateUserMarker(map, userPos.lat, userPos.lng, result.nearestStop); 
         })
         .catch(err => console.error("findNearestStop failed:", err));
 }
 
+// upon successful tracking of user's position, call updateUserLocation
 function success(pos) {
-    // upon successful tracking of user's position, call updateUserLocation
     updateUserLocation({lat: pos.coords.latitude, lng: pos.coords.longitude});
 }
 
@@ -185,18 +225,3 @@ function error(err) {
 }
 
 navigator.geolocation.watchPosition(success, error, options);
-
-// helper function to get user's current position 
-// async function getUserLocation() {
-//     return new Promise((resolve, reject) => {
-//     if (!navigator.geolocation) {
-//         reject(new Error("Geolocation not supported"));
-//         return;
-//     }
-//     navigator.geolocation.getCurrentPosition(
-//         (position) => resolve({lat: position.coords.latitude, lng: position.coords.longitude}),
-//         (error) => reject(error),
-//         options
-//     );
-//     });
-// }

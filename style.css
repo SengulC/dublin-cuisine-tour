@@ -166,10 +166,10 @@ nav {
   color: var(--white);
 }
 
-.action-return:focus, :hover {
+/* .action-return:focus, :hover {
   border-color: var(--gold);
   color: var(--gold);
-}
+} */
 
 /* Gold fill signals the primary action without needing a label like "recommended" */
 .action-discover {
